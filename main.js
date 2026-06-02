@@ -41,7 +41,7 @@
   var centerEl     = document.querySelector('.nav__center');
   var LINE_MIN_PX  = 28;   /* resting dash width in px        */
   var LINE_GAP_PX  = 32;   /* breathing room each side at 100% */
-  var lineMaxWidth = 260;  /* fallback; overwritten by measure() */
+  var lineMaxWidth = 220;  /* fallback; overwritten by measure() */
 
   function measureLineMax() {
     if (!centerEl) return;
