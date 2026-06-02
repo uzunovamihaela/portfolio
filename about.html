@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Mihaela Uzunova</title>
+  <meta name="description" content="About Mihaela Uzunova — Product Designer with a Master's in IT–Product Design.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ══ NAVIGATION ══════════════════════════════════════════
+     Structure: [Logo → index.html] | scroll-line | [Links]
+ ═════════════════════════════════════════════════════════ -->
+<div class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__pill">
+    <a href="index.html" class="nav__logo" aria-label="Mihaela Uzunova — go to homepage">
+      <img src="assets/logo-mu.svg" alt="Mihaela Uzunova" height="32" width="auto">
+    </a>
+    <div class="nav__center" aria-hidden="true">
+      <div class="nav__scroll-line"></div>
+    </div>
+    <nav class="nav__links" aria-label="Page links">
+      <a href="index.html" class="nav__link">Projects</a>
+      <a href="about.html" class="nav__link nav__link--active">About</a>
+    </nav>
+    <button class="nav__ham" id="navHam"
+            aria-label="Toggle navigation" aria-expanded="false" aria-controls="navDrawer">
+      <span class="nav__ham-line"></span>
+      <span class="nav__ham-line"></span>
+      <span class="nav__ham-line"></span>
+    </button>
+    <div class="nav__tab nav__tab--left"  aria-hidden="true"></div>
+    <div class="nav__tab nav__tab--right" aria-hidden="true"></div>
+  </div>
+</div>
+<div class="nav__drawer" id="navDrawer" role="menu">
+  <a href="index.html" class="nav__drawer-link" role="menuitem">Projects</a>
+  <a href="about.html" class="nav__drawer-link nav__drawer-link--active" role="menuitem">About</a>
+</div>
+
+<!-- ══ LIGHTBOX ══════════════════════════════════════════ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Image viewer" aria-modal="true">
+  <button class="lightbox__btn lightbox__close" id="lightboxClose" aria-label="Close">✕</button>
+  <button class="lightbox__btn lightbox__prev"  id="lightboxPrev"  aria-label="Previous">‹</button>
+  <img class="lightbox__img" id="lightboxImg" src="" alt="">
+  <button class="lightbox__btn lightbox__next"  id="lightboxNext"  aria-label="Next">›</button>
+</div>
+
+<!-- ══ PAGE ══════════════════════════════════════════════ -->
+<main class="page">
+
+  <!-- ── 1. INTRO / PASSION ──────────────────────────────
+       Hierarchy: heading label → large body text → image
+  ─────────────────────────────────────────────────────── -->
+  <section class="panel panel--round-bottom"
+           aria-label="About intro"
+           style="padding-top:var(--space-hero-top); padding-bottom:120px;">
+    <div class="panel__inner" style="display:flex;flex-direction:column;gap:60px;">
+
+      <div class="passion-grid reveal">
+        <span class="passion-grid__label">My passion</span>
+        <div class="passion-grid__text">
+          is creating great user experiences through problem-solving. I worked with
+          <strong>content creation, human-centred design</strong> and some
+          <strong>front-end development</strong>.
+          With a Master's in IT–Product Design, I focused on user research and
+          involvement in the process by participatory design workshops, ethnographic
+          research and anthropology. I was involved in collaborative facilitation
+          between stakeholders and prototyping of interactive products. Additionally,
+          I created physical experiences to enhance kids' learning and help companies
+          with conversational tools to improve internal processes.
+        </div>
+      </div>
+
+      <div class="reveal" style="--reveal-delay:100ms">
+        <img src="assets/images/about-education-projects.svg"
+             data-fallback="https://framerusercontent.com/images/8AeSG3EFLdiTEGOoKFUkaVAniys.png"
+             alt="Four physical product design projects from education"
+             loading="lazy"
+             style="width:100%;border-radius:15px;object-fit:cover;">
+        <p class="photo-caption">
+          Four projects from my Product Design education — physical products
+          used to create experiences, discover data and support learning.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="panel-gap" aria-hidden="true"></div>
+
+  <!-- ── 2. TESTIMONIAL CAROUSEL ─────────────────────────
+       Hierarchy: section label → large quote → author
+       Users can click arrows or dots; auto-plays every 6s.
+  ─────────────────────────────────────────────────────── -->
+  <section class="panel panel--round-all content-panel reveal" aria-label="Testimonials">
+    <div class="testimonial-carousel" role="region" aria-label="Colleague testimonials" aria-roledescription="carousel">
+
+      <!-- Header row: label + arrow controls -->
+      <div class="testimonial-carousel__header">
+        <p class="testimonial-carousel__label" id="carousel-label">What colleagues say</p>
+        <div class="testimonial-carousel__controls" aria-label="Carousel controls">
+          <button class="testimonial-carousel__btn" id="testimonialPrev"
+                  aria-label="Previous testimonial" aria-controls="testimonialTrack">‹</button>
+          <button class="testimonial-carousel__btn" id="testimonialNext"
+                  aria-label="Next testimonial" aria-controls="testimonialTrack">›</button>
+        </div>
+      </div>
+
+      <!-- Slide viewport -->
+      <div class="testimonial-carousel__viewport">
+        <div class="testimonial-carousel__track" id="testimonialTrack"
+             aria-live="polite" aria-atomic="true">
+
+          <!-- Slide 1 -->
+          <div class="testimonial-slide is-active"
+               role="group" aria-roledescription="slide" aria-label="Testimonial 1 of 3">
+            <blockquote class="testimonial-slide__quote">
+              I was very fortunate to work with Mihaela for multiple projects.
+              Her passion for problem-solving and empathy to understand the user
+              is very motivating. She demonstrates good communication and design
+              skills as well.
+            </blockquote>
+            <div class="testimonial-slide__author">
+              <div class="testimonial-slide__avatar">
+                <img src="assets/images/testimonial-bilyana.svg"
+                     data-fallback="https://framerusercontent.com/images/lwSOrYV5idbZUSqxw7YNv3wAYY0.png"
+                     alt="Bilyana Karamfilova" loading="lazy">
+              </div>
+              <div>
+                <span class="testimonial-slide__name">Bilyana Karamfilova</span>
+                <span class="testimonial-slide__role">UX Designer at SAP</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="testimonial-slide"
+               role="group" aria-roledescription="slide" aria-label="Testimonial 2 of 3">
+            <blockquote class="testimonial-slide__quote">
+              Mihaela has an exceptional ability to balance user needs with
+              business goals. Her work on our project showed a deep understanding
+              of interaction design and she consistently delivered thoughtful,
+              well-considered solutions.
+            </blockquote>
+            <div class="testimonial-slide__author">
+              <div class="testimonial-slide__avatar" style="background:#dde5ea;">
+                <img src="assets/images/testimonial-bilyana.svg"
+                     alt="Colleague" loading="lazy"
+                     style="opacity:.4;filter:grayscale(1)">
+              </div>
+              <div>
+                <span class="testimonial-slide__name">Colleague Name</span>
+                <span class="testimonial-slide__role">Add your second testimonial here</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="testimonial-slide"
+               role="group" aria-roledescription="slide" aria-label="Testimonial 3 of 3">
+            <blockquote class="testimonial-slide__quote">
+              Working with Mihaela was a great experience. She brings energy,
+              structure and creative thinking to every challenge. Her background
+              in participatory design really shows in how she involves the whole
+              team in the process.
+            </blockquote>
+            <div class="testimonial-slide__author">
+              <div class="testimonial-slide__avatar" style="background:#e5ede0;">
+                <img src="assets/images/testimonial-bilyana.svg"
+                     alt="Colleague" loading="lazy"
+                     style="opacity:.4;filter:grayscale(1)">
+              </div>
+              <div>
+                <span class="testimonial-slide__name">Colleague Name</span>
+                <span class="testimonial-slide__role">Add your third testimonial here</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /.track -->
+      </div><!-- /.viewport -->
+
+      <!-- Dot indicators -->
+      <div class="testimonial-carousel__dots" role="tablist" aria-label="Select testimonial">
+        <button class="testimonial-carousel__dot is-active"
+                role="tab" aria-selected="true" aria-controls="testimonialTrack"
+                aria-label="Testimonial 1" data-index="0"></button>
+        <button class="testimonial-carousel__dot"
+                role="tab" aria-selected="false" aria-controls="testimonialTrack"
+                aria-label="Testimonial 2" data-index="1"></button>
+        <button class="testimonial-carousel__dot"
+                role="tab" aria-selected="false" aria-controls="testimonialTrack"
+                aria-label="Testimonial 3" data-index="2"></button>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="panel-gap" aria-hidden="true"></div>
+
+  <!-- ── 3. PROFESSIONAL EXPERIENCE ──────────────────────
+       Hierarchy: H2 section title → role/company list
+  ─────────────────────────────────────────────────────── -->
+  <section class="panel panel--round-all content-panel reveal"
+           id="services" aria-label="Professional experience">
+    <div class="panel__inner">
+      <div class="two-col">
+
+        <div class="two-col__sticky">
+          <h2 class="text-h2">My professional<br>experience</h2>
+        </div>
+
+        <div class="two-col__scroll">
+          <ul class="experience-list" aria-label="Work history">
+            <li class="experience-item">
+              <div>
+                <span class="experience-item__role">Freelance Designer</span>
+                <span class="experience-item__company">Freelance</span>
+              </div>
+              <span class="experience-item__year">2024 – present</span>
+            </li>
+            <li class="experience-item">
+              <div>
+                <span class="experience-item__role">Student UX Analyst</span>
+                <span class="experience-item__company">Obsidian Media</span>
+              </div>
+              <span class="experience-item__year">2023 – 2024</span>
+            </li>
+            <li class="experience-item">
+              <div>
+                <span class="experience-item__role">UI Designer</span>
+                <span class="experience-item__company">WasteHero</span>
+              </div>
+              <span class="experience-item__year">2022 – 2022</span>
+            </li>
+            <li class="experience-item">
+              <div>
+                <span class="experience-item__role">UX/UI Designer &amp; Content Creator</span>
+                <span class="experience-item__company">Admill</span>
+              </div>
+              <span class="experience-item__year">2021 – 2022</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="panel-gap" aria-hidden="true"></div>
+
+  <!-- ── 4. FREELANCE PROJECTS ───────────────────────────
+       Hierarchy: H2 heading → image thumbnail → title → description
+       Images fill boxes with object-fit:cover (or contain for logos)
+  ─────────────────────────────────────────────────────── -->
+  <section class="panel panel--round-all content-panel reveal" aria-label="Freelance projects">
+    <div class="panel__inner">
+
+      <h2 class="freelance-section-heading">Freelance projects and related work</h2>
+
+      <div class="freelance-grid">
+
+        <!-- LOGO items use --logo modifier for object-fit:contain -->
+        <div class="freelance-item">
+          <div class="freelance-item__thumb freelance-item__thumb--logo" style="background:#f0ede4;">
+            <img src="assets/images/freelance-shopping-boost-logo.svg"
+                 data-fallback="https://framerusercontent.com/images/0Tjo4TJbBhtSifZKqpNWFvZrxtI.svg"
+                 alt="Shopping Boost logo design" loading="lazy">
+          </div>
+          <p class="freelance-item__title">Shopping Boost Logo</p>
+          <p class="freelance-item__desc">A more modern logo for the sophisticated look of the new visual identity</p>
+        </div>
+
+        <div class="freelance-item">
+          <div class="freelance-item__thumb" style="background:#e8e3d5;">
+            <img src="assets/images/freelance-shopping-boost.svg"
+                 data-fallback="https://framerusercontent.com/images/w4PWAtOiKPuX6em18YrSMd3Jj10.png"
+                 alt="ShoppingBoost one-pager design" loading="lazy">
+          </div>
+          <p class="freelance-item__title">ShoppingBoost</p>
+          <p class="freelance-item__desc">One-pager design and visual identity for a digital brand to create consistent experience</p>
+        </div>
+
+        <div class="freelance-item">
+          <div class="freelance-item__thumb freelance-item__thumb--logo" style="background:#e5ede0;">
+            <img src="assets/images/freelance-healthy-haskovo-logo.svg"
+                 data-fallback="https://framerusercontent.com/images/qCf59tjkWl9JNCRsRRt0Go29gw.svg"
+                 alt="Healthy Haskovo logo" loading="lazy">
+          </div>
+          <p class="freelance-item__title">Healthy Haskovo Logo</p>
+          <p class="freelance-item__desc">Logo design — a fork silhouette with the HH initials for a healthy restaurant brand</p>
+        </div>
+
+        <div class="freelance-item">
+          <div class="freelance-item__thumb" style="background:#ede8df;">
+            <img src="assets/images/freelance-healthy-haskovo.svg"
+                 data-fallback="https://framerusercontent.com/images/FFqtTVPtNFP31FycWjvl6tygAug.png"
+                 alt="Healthy Haskovo menu design" loading="lazy">
+          </div>
+          <p class="freelance-item__title">Healthy Haskovo</p>
+          <p class="freelance-item__desc">Design of menu cards and a website menu for a healthy restaurant in Bulgaria</p>
+        </div>
+
+        <div class="freelance-item">
+          <div class="freelance-item__thumb" style="background:#dde5ea;">
+            <img src="assets/images/freelance-energym.svg"
+                 data-fallback="https://framerusercontent.com/images/6rnTeiDVu0fm8cZxaADlhZErVI.png"
+                 alt="Energym promotional materials" loading="lazy">
+          </div>
+          <p class="freelance-item__title">Energym</p>
+          <p class="freelance-item__desc">Design of promotional materials for a gym in Bulgaria</p>
+        </div>
+
+        <div class="freelance-item">
+          <div class="freelance-item__thumb" style="background:#e0e4ed;">
+            <img src="assets/images/freelance-acter.svg"
+                 data-fallback="https://framerusercontent.com/images/JcIVORvsHLmitYLyoqSGAB2Ks.png"
+                 alt="Acter social movement tool" loading="lazy">
+          </div>
+          <p class="freelance-item__title">Acter</p>
+          <p class="freelance-item__desc">Building a digital tool to support social movements for a better future</p>
+        </div>
+
+        <div class="freelance-item">
+          <div class="freelance-item__thumb" style="background:#e8e4dc;">
+            <img src="assets/images/freelance-gn-future-health.svg"
+                 data-fallback="https://framerusercontent.com/images/236sgPd18s0Sccp9KuyGt0Kv4.png"
+                 alt="GN Future health flyer" loading="lazy">
+          </div>
+          <p class="freelance-item__title">GN – Future health</p>
+          <p class="freelance-item__desc">Flyers and business card for a healthcare company serving Bulgarian clients in Ireland</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="panel-gap" aria-hidden="true"></div>
+
+  <!-- ── 5. HOBBIES ──────────────────────────────────────
+       Hierarchy: H2 → H3 hobby name → body desc → photo grid
+  ─────────────────────────────────────────────────────── -->
+  <section class="panel panel--round-all content-panel reveal" aria-label="Hobbies">
+    <div class="panel__inner">
+
+      <h2 class="hobbies-heading">Hobbies &amp; Free time</h2>
+
+      <div class="hobby-section">
+        <div class="hobby-section__header">
+          <h3 class="hobby-section__name">Quilling</h3>
+          <p class="hobby-section__desc">A hobby I discovered as a teenager — it became my first small business.</p>
+        </div>
+        <div class="hobby-gallery">
+          <img class="hobby-gallery__img" src="assets/images/hobby-quilling-1.svg"
+               data-fallback="https://framerusercontent.com/images/YHaYY87H1dk442g3gDPDpAk1Ows.png"
+               alt="Quilling art 1" loading="lazy">
+          <img class="hobby-gallery__img" src="assets/images/hobby-quilling-2.svg"
+               data-fallback="https://framerusercontent.com/images/HFTylfSXX4FcjKSsA3PEj3fnMRU.png"
+               alt="Quilling art 2" loading="lazy">
+          <img class="hobby-gallery__img" src="assets/images/hobby-quilling-3.svg"
+               data-fallback="https://framerusercontent.com/images/AWq4Z7p8507ijrqC2cA4pgmf760.png"
+               alt="Quilling art 3" loading="lazy">
+          <img class="hobby-gallery__img" src="assets/images/hobby-quilling-4.svg"
+               data-fallback="https://framerusercontent.com/images/sGIptMogyaDWTcd0AEV4dmSQ.png"
+               alt="Quilling art 4" loading="lazy">
+        </div>
+      </div>
+
+      <div class="hobby-section">
+        <div class="hobby-section__header">
+          <h3 class="hobby-section__name">Baking</h3>
+          <p class="hobby-section__desc">When I'm not designing, you'll find me in the kitchen baking healthy treats.</p>
+        </div>
+        <div class="hobby-gallery">
+          <img class="hobby-gallery__img" src="assets/images/hobby-baking-1.svg"
+               data-fallback="https://framerusercontent.com/images/GiwDTWTmSLKFHNaBdzjFYMfHlog.jpeg"
+               alt="Baking 1" loading="lazy">
+          <img class="hobby-gallery__img" src="assets/images/hobby-baking-2.svg"
+               data-fallback="https://framerusercontent.com/images/i2eRsz8CIRX2nXGvk4YJ8UVtW2Y.jpeg"
+               alt="Baking 2" loading="lazy">
+          <img class="hobby-gallery__img" src="assets/images/hobby-baking-3.svg"
+               data-fallback="https://framerusercontent.com/images/HxMLSd2zOgRobpEKYFdrCWTsAIk.jpeg"
+               alt="Baking 3" loading="lazy">
+          <img class="hobby-gallery__img" src="assets/images/hobby-baking-4.svg"
+               data-fallback="https://framerusercontent.com/images/gluixwspMv5TgZrB2dmzsBmr4PY.jpeg"
+               alt="Baking 4" loading="lazy">
+        </div>
+      </div>
+
+      <div class="hobby-section">
+        <div class="hobby-section__header">
+          <h3 class="hobby-section__name">Working out</h3>
+          <p class="hobby-section__desc">
+            Physical movement is my mental reset — pilates, yoga, strength training
+            and cycling in nature. I started a pilates group with friends last year
+            and hope to get certified to teach professionally.
+          </p>
+        </div>
+        <div class="hobby-gallery">
+          <img class="hobby-gallery__img" src="assets/images/hobby-workout-1.svg"
+               data-fallback="https://framerusercontent.com/images/nebKHtFgmzqgBatkZMsHce5x1o.png"
+               alt="Workout 1" loading="lazy">
+          <img class="hobby-gallery__img" src="assets/images/hobby-workout-2.svg"
+               data-fallback="https://framerusercontent.com/images/xOynuA3ihBtTfeAcx9zMGR2T1h0.png"
+               alt="Workout 2" loading="lazy">
+          <img class="hobby-gallery__img" src="assets/images/hobby-workout-3.svg"
+               data-fallback="https://framerusercontent.com/images/FqAjwyoiWbgMYJBif4N5TjheSzk.png"
+               alt="Workout 3" loading="lazy">
+          <img class="hobby-gallery__img" src="assets/images/hobby-workout-4.svg"
+               data-fallback="https://framerusercontent.com/images/Z2DNbGDiVHFKPW6QPA536LbrDc.png"
+               alt="Workout 4" loading="lazy">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="panel-gap" aria-hidden="true"></div>
+
+  <!-- ── FOOTER ──────────────────────────────────────── -->
+  <footer class="footer" aria-label="Footer">
+    <div class="footer__inner reveal">
+      <div>
+        <p class="footer__cta-label">← Let it happen</p>
+        <a href="mailto:muzunova2000@gmail.com" class="footer__email-link">Send an email</a>
+      </div>
+      <div class="footer__secondary-links">
+        <a href="mailto:muzunova2000@gmail.com">muzunova2000@gmail.com</a>
+        <a href="https://www.linkedin.com/in/mihaela-uzunova" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copyright">Mihaela Uzunova, 2026</span>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="index.html" class="footer__nav-link">Projects</a>
+          <a href="about.html" class="footer__nav-link">About</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>

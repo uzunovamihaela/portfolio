@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mihaela Uzunova — Portfolio</title>
+  <meta name="description" content="Product Designer specialising in user-centred experiences, content creation and graphic design.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ══ NAVIGATION ══════════════════════════════════════════════════
+     Structure: Logo | [Center: expanding scroll line] | Links
+     The .nav__scroll-line width is driven by scroll position in main.js.
+     Corner tabs (.nav__tab) replicate Framer's masked shadow shapes.
+ ══════════════════════════════════════════════════════════════ -->
+<div class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__pill">
+
+    <!-- Logo — black circle with MU mark -->
+    <a href="index.html" class="nav__logo" aria-label="Mihaela Uzunova — go to homepage">
+      <img src="assets/logo-mu.svg" alt="Mihaela Uzunova" height="32" width="auto">
+    </a>
+
+    <!-- Centre — expanding scroll progress line -->
+    <div class="nav__center" aria-hidden="true">
+      <div class="nav__scroll-line"></div>
+    </div>
+
+    <!-- Desktop links -->
+    <nav class="nav__links" aria-label="Page links">
+      <a href="index.html" class="nav__link nav__link--active">Projects</a>
+      <a href="about.html" class="nav__link">About</a>
+    </nav>
+
+    <!-- Hamburger (mobile only) -->
+    <button class="nav__ham" id="navHam"
+            aria-label="Toggle navigation" aria-expanded="false" aria-controls="navDrawer">
+      <span class="nav__ham-line"></span>
+      <span class="nav__ham-line"></span>
+      <span class="nav__ham-line"></span>
+    </button>
+
+    <!-- Corner tab decorations (extend pill shadow outward) -->
+    <div class="nav__tab nav__tab--left"  aria-hidden="true"></div>
+    <div class="nav__tab nav__tab--right" aria-hidden="true"></div>
+
+  </div>
+</div>
+
+<!-- Mobile navigation drawer -->
+<div class="nav__drawer" id="navDrawer" role="menu" aria-label="Mobile navigation">
+  <a href="index.html" class="nav__drawer-link nav__drawer-link--active" role="menuitem">Projects</a>
+  <a href="about.html" class="nav__drawer-link" role="menuitem">About</a>
+</div>
+
+<!-- ══ PAGE ════════════════════════════════════════════════ -->
+<main class="page">
+
+  <!-- ── HERO ────────────────────────────────────────────── -->
+  <section class="panel panel--round-bottom" aria-label="Hero">
+    <div class="panel__inner hero">
+
+      <div class="hero__text-group">
+        <!-- H1: each word is .hero__word for stagger animation -->
+        <h1 class="hero__heading" aria-label="I help companies create experiences that impress, attract and convert">
+          <span class="hero__word">I</span>&#32;<span class="hero__word">help</span>&#32;<span class="hero__word">companies</span>&#32;<span class="hero__word">create</span>&#32;<span class="hero__word">experiences</span>&#32;<span class="hero__word">that</span>&#32;<span class="hero__word"><em>impress,</em></span>&#32;<span class="hero__word"><em>attract</em></span>&#32;<span class="hero__word">and</span>&#32;<span class="hero__word">convert</span>
+        </h1>
+        <p class="hero__subheading">
+          I am a Product Designer who has experience within user-centred concept development, content creation and graphic design.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── PROJECTS PANEL ───────────────────────────────────── -->
+  <!-- White section rounding at bottom, padded 120px sides + 180px bottom -->
+  <section class="panel panel--round-bottom projects-panel" aria-label="Selected Work">
+    <div class="panel__inner">
+
+      <!-- ── PROJECT CARD: CLIC ───────────────────────────── -->
+      <div class="project-entry reveal">
+        <span class="project-entry__eyebrow">— Selected Work</span>
+
+        <div class="project-card">
+          <div class="project-card__shadow" aria-hidden="true"></div>
+          <div class="project-card__inner">
+
+            <!-- Full-width 4:3 image -->
+            <div class="project-card__image-wrap">
+              <a href="project-clic.html" class="project-card__image-link" aria-label="View Clic case study">
+                <img class="project-card__image"
+                     src="assets/images/project-clic-thumb.svg"
+                     data-fallback="https://framerusercontent.com/images/dTWqrLY4Br1bdxAOUjs8K1aw.png"
+                     alt="Clic — 3D furniture configurator prototype"
+                     loading="lazy">
+              </a>
+              <a class="project-card__live-badge"
+                 href="https://www.figma.com/proto/n9FEQ5w3UHpovMJNzANUa2/CLIC---project-2?node-id=383-9312&scaling=contain&page-id=0%3A1&starting-point-node-id=383%3A9312"
+                 target="_blank" rel="noopener noreferrer"
+                 aria-label="Live prototype link (opens in new tab)">
+                Live Link ↗
+              </a>
+            </div>
+
+            <!-- Info row: sticky title left, meta right -->
+            <div class="project-card__info">
+              <div class="project-card__title-col">
+                <h2 class="project-card__title">
+                  <strong>Clic</strong> — A solution which guides users into visualising their ideas and supports them into the decision making process
+                </h2>
+              </div>
+              <div class="project-card__meta-col">
+                <a class="project-card__meta-row"
+                   href="https://www.figma.com/proto/n9FEQ5w3UHpovMJNzANUa2/CLIC---project-2?node-id=383-9312"
+                   target="_blank" rel="noopener noreferrer">
+                  <span class="project-card__meta-icon" aria-hidden="true">
+                    <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 3.5 11.5 7 8 10.5"/></svg>
+                  </span>
+                  <span class="project-card__meta-label">Live Link</span>
+                </a>
+                <div class="project-card__meta-divider" aria-hidden="true"></div>
+                <div class="project-card__meta-row">
+                  <span class="project-card__meta-icon" aria-hidden="true">
+                    <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="12" height="8" rx="1"/></svg>
+                  </span>
+                  <span class="project-card__meta-label">1 page</span>
+                </div>
+                <div class="project-card__meta-divider" aria-hidden="true"></div>
+                <div class="project-card__meta-row">
+                  <span class="project-card__meta-icon" aria-hidden="true">
+                    <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="7" r="5.5"/><path d="M7 4.5V7l2 1.5"/></svg>
+                  </span>
+                  <span class="project-card__meta-label">4 Weeks</span>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /.project-card__inner -->
+        </div><!-- /.project-card -->
+      </div><!-- /.project-entry Clic -->
+
+      <!-- ── PROJECT CARD: FØTEXA ──────────────────────────── -->
+      <div class="project-entry reveal" style="--reveal-delay: 80ms">
+
+        <div class="project-card">
+          <div class="project-card__shadow" aria-hidden="true"></div>
+          <div class="project-card__inner">
+
+            <div class="project-card__image-wrap">
+              <a href="#" class="project-card__image-link" aria-label="View Føtexa case study">
+                <img class="project-card__image"
+                     src="assets/images/project-fotexa-thumb.svg"
+                     data-fallback="https://framerusercontent.com/images/kbbkXfD233alHyseom8bFwj7PB0.png"
+                     alt="Føtexa — smart shopping cart concept"
+                     loading="lazy">
+              </a>
+              <a class="project-card__live-badge"
+                 href="https://www.figma.com/proto/Sz2V5uYvwkzyIENmwireK7/Grundfos?node-id=225%3A9245&scaling=scale-down&starting-point-node-id=225%3A9245"
+                 target="_blank" rel="noopener noreferrer">
+                Live Link ↗
+              </a>
+            </div>
+
+            <div class="project-card__info">
+              <div class="project-card__title-col">
+                <h2 class="project-card__title">
+                  <strong>Føtexa</strong> — A smart shopping cart which revolutionises the way people do grocery shopping
+                </h2>
+              </div>
+              <div class="project-card__meta-col">
+                <div class="project-card__meta-row">
+                  <span class="project-card__meta-icon" aria-hidden="true">
+                    <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="7" r="5.5"/><path d="M7 4.5V7l2 1.5"/></svg>
+                  </span>
+                  <span class="project-card__meta-label">3 Weeks</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div><!-- /.project-entry Føtexa -->
+
+      <!-- ── PROJECT CARD: BOOK A TECHNICIAN ───────────────── -->
+      <div class="project-entry reveal" style="--reveal-delay: 120ms">
+
+        <div class="project-card">
+          <div class="project-card__shadow" aria-hidden="true"></div>
+          <div class="project-card__inner">
+
+            <div class="project-card__image-wrap">
+              <a href="project-book-technician.html" class="project-card__image-link" aria-label="View Book a Technician case study">
+                <img class="project-card__image"
+                     src="assets/images/project-book-technician-thumb.svg"
+                     data-fallback="https://framerusercontent.com/images/NDYQ9pjAjBEgIitewU9suz3Yts.png"
+                     alt="Book a Technician — booking flow design"
+                     loading="lazy">
+              </a>
+            </div>
+
+            <div class="project-card__info">
+              <div class="project-card__title-col">
+                <h2 class="project-card__title">
+                  <strong>Book a technician</strong> — creating an easy booking process for customers to enhance the relationship with the brand
+                </h2>
+              </div>
+              <div class="project-card__meta-col">
+                <div class="project-card__meta-row">
+                  <span class="project-card__meta-icon" aria-hidden="true">
+                    <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="7" r="5.5"/><path d="M7 4.5V7l2 1.5"/></svg>
+                  </span>
+                  <span class="project-card__meta-label">3 weeks</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div><!-- /.project-entry Book a Technician -->
+
+      <!-- ── PROJECT CARD: VISUAL ACTIVISM ─────────────────── -->
+      <div class="project-entry reveal" style="--reveal-delay: 160ms">
+
+        <div class="project-card">
+          <div class="project-card__shadow" aria-hidden="true"></div>
+          <div class="project-card__inner">
+
+            <div class="project-card__image-wrap">
+              <a href="#" class="project-card__image-link" aria-label="View Visual Activism case study">
+                <img class="project-card__image"
+                     src="assets/images/project-visual-activism-thumb.svg"
+                     data-fallback="https://framerusercontent.com/images/LPNQByh9KhmUgRYPbDtVcivfe3c.png"
+                     alt="Visual Activism — experimental design project"
+                     loading="lazy">
+              </a>
+            </div>
+
+            <div class="project-card__info">
+              <div class="project-card__title-col">
+                <h2 class="project-card__title">
+                  <strong>Visual activism</strong> — Exploration of creativity, experimentation, originality and conceptual thinking around a topic.
+                </h2>
+              </div>
+              <div class="project-card__meta-col">
+                <!-- No live link for this project -->
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div><!-- /.project-entry Visual Activism -->
+
+    </div><!-- /.panel__inner -->
+  </section><!-- /.projects-panel -->
+
+  <!-- ── GAP ──────────────────────────────────────────────── -->
+  <div class="panel-gap" aria-hidden="true"></div>
+
+  <!-- ── ABOUT / SKILLS PANEL ─────────────────────────────── -->
+  <section class="panel panel--round-all content-panel" aria-label="About and skills">
+    <div class="panel__inner">
+      <div class="two-col reveal">
+
+        <!-- Left: manifesto (sticky) -->
+        <div class="two-col__sticky">
+          <p class="text-h4">
+            I turn users' needs and pain points into digital experiences which combine accessible visual design, storytelling, and human-centred fundamentals to deliver business value.
+          </p>
+          <a href="about.html" class="btn btn--outline-dark">← What I do</a>
+        </div>
+
+        <!-- Right: skills list -->
+        <ul class="skills-list two-col__scroll" aria-label="Skills">
+          <li class="skills-list__item">Usability testing</li>
+          <li class="skills-list__item">User research</li>
+          <li class="skills-list__item">Mapping of digital experiences</li>
+          <li class="skills-list__item">Produced print and digital visuals</li>
+          <li class="skills-list__item">Designed consistent design systems</li>
+          <li class="skills-list__item">Project management</li>
+          <li class="skills-list__item">Sketching</li>
+          <li class="skills-list__item">Logo design</li>
+          <li class="skills-list__item">Design of visual identity</li>
+          <li class="skills-list__item">Designed with accessibility standards</li>
+          <li class="skills-list__item">Multidisciplinary teamwork</li>
+          <li class="skills-list__item">Front-end development</li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GAP ──────────────────────────────────────────────── -->
+  <div class="panel-gap" aria-hidden="true"></div>
+
+  <!-- ── COLLABORATE PANEL (on black) ─────────────────────── -->
+  <section class="collab-section reveal" aria-label="Collaboration call to action">
+    <div class="collab-section__inner">
+      <div class="collab-section__copy">
+        <h2 class="text-h2" >
+          Ready to collaborate? Let's connect
+        </h2>
+        <p class="text-body text-on-dark" style="margin-bottom: 28px; max-width: 480px;">
+          Get in touch to discuss more digital design projects and branding to create a memorable visual identity
+        </p>
+        <a href="about.html#services" class="btn btn--outline-light">← Services &amp; Skills</a>
+      </div>
+      <div class="collab-section__action">
+        <a href="mailto:muzunova2000@gmail.com" class="btn btn--outline-light">Send an email →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GAP ──────────────────────────────────────────────── -->
+  <div class="panel-gap" aria-hidden="true"></div>
+
+  <!-- ── ABOUT TEASER PANEL ───────────────────────────────── -->
+  <section class="panel panel--round-all content-panel reveal" aria-label="About teaser">
+    <div class="panel__inner">
+      <div class="two-col">
+        <div class="two-col__sticky">
+          <h2 class="text-h3">About Me</h2>
+          <p class="text-body" style="margin-top: 12px;">
+            A Product Designer with experience solving digital problems, I explore the endless possibilities of creating engaging digital concepts and services. I have interest in user research and design of intuitive interfaces which support users' goals and answer their needs.
+          </p>
+          <a href="about.html" class="btn btn--outline-dark" style="margin-top: 8px;">Read more →</a>
+        </div>
+        <div class="two-col__scroll">
+          <img src="assets/images/about-education-projects.svg"
+               data-fallback="https://framerusercontent.com/images/8AeSG3EFLdiTEGOoKFUkaVAniys.png"
+               alt="Product design education projects"
+               loading="lazy"
+               style="width:100%;border-radius:14px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GAP ──────────────────────────────────────────────── -->
+  <div class="panel-gap" aria-hidden="true"></div>
+
+  <!-- ── METHODS & TOOLS PANEL ────────────────────────────── -->
+  <section class="panel panel--round-all content-panel reveal" id="services" aria-label="Methods and tools">
+    <div class="panel__inner">
+      <div class="two-col">
+        <div class="two-col__sticky">
+          <h2 class="text-h3">Methods and tools</h2>
+          <p class="text-body" style="margin-top: 12px;">
+            Below are some of the methods and tools I used to create meaningful digital products and services
+          </p>
+        </div>
+        <div class="two-col__scroll">
+          <div class="tag-group" style="padding-bottom:18px; border-bottom: 1px solid var(--color-border-light); margin-bottom: 18px;">
+            <span class="tag">User journey maps</span>
+            <span class="tag">User interviews</span>
+            <span class="tag">Focus group</span>
+            <span class="tag">Competitor research</span>
+            <span class="tag">Digital strategy</span>
+            <span class="tag">Participatory design</span>
+            <span class="tag">Heuristic evaluation</span>
+          </div>
+          <div class="tag-group">
+            <span class="tag">Figma</span>
+            <span class="tag">Illustrator</span>
+            <span class="tag">Lightroom</span>
+            <span class="tag">Photoshop</span>
+            <span class="tag">Premiere Pro</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Wordpress</span>
+            <span class="tag">Framer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GAP ──────────────────────────────────────────────── -->
+  <div class="panel-gap" aria-hidden="true"></div>
+
+  <!-- ── FOOTER ───────────────────────────────────────────── -->
+  <footer class="footer" aria-label="Footer">
+    <div class="footer__inner reveal">
+      <div>
+        <p class="footer__cta-label">← Let it happen</p>
+        <a href="mailto:muzunova2000@gmail.com" class="footer__email-link">
+          Send an email
+        </a>
+      </div>
+      <div class="footer__secondary-links">
+        <a href="mailto:muzunova2000@gmail.com">muzunova2000@gmail.com</a>
+        <a href="https://www.linkedin.com/in/mihaela-uzunova" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copyright">Mihaela Uzunova, 2026</span>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="index.html" class="footer__nav-link">Projects</a>
+          <a href="about.html" class="footer__nav-link">About</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>
