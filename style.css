@@ -140,7 +140,6 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   z-index: 200;
   display: flex;
   justify-content: center;
-  padding-top: clamp(10px, 3.55vh, 36px);
   pointer-events: none;
 }
 
@@ -149,7 +148,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   pointer-events: all;
   position: relative;
   background: var(--color-nav-pill);
-  border-radius: 14px 14px 30px 30px;
+  border-radius: 0px 0px 30px 30px;
   box-shadow: var(--shadow-nav);
   display: flex;
   align-items: center;
