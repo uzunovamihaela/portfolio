@@ -925,9 +925,10 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 }
 .case-section__inner {
   width: 100%; 
+  height: 100%;
   max-width: 1024px;
   flex-direction: column;   
-  gap: 0;                   
+  gap: 24px;                   
   align-items: stretch;
   justify-content: space-between;
 }
