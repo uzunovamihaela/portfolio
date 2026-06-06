@@ -925,8 +925,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 }
 .case-section__inner {
   width: 100%; max-width: 1024px;
-  display: flex; flex-direction: row;
-  align-items: flex-start; gap: var(--space-col-gap);
+  
 }
 .case-section__label-col {
   flex: 1 0 0; min-width: 0;
