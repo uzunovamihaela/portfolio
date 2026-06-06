@@ -156,6 +156,12 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   padding: 4px 24px 4px 4px;
   overflow: visible;
 }
+.pill-btn:hover { transform: scale(1.02); }
+.pill-btn.outline {
+  color: rgba(0,0,0,.55);
+  border-color: rgba(0,0,0,.14);
+  background: transparent;
+}
 
 /* Logo — clickable, redirects to index */
 /* Logo — transparent, bare SVG, no background circle */
