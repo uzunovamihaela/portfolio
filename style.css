@@ -620,7 +620,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 
 /* Passion intro */
 .passion-grid {
-  display: flex; flex-direction: row;
+  flex-direction: row;
   align-items: flex-start; gap: 48px; width: 100%;
 }
 .passion-grid__label {
@@ -870,7 +870,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 .hobby-section { margin-bottom: 72px; }
 .hobby-section:last-child { margin-bottom: 0; }
 .hobby-section__header {
-  display: flex; gap: var(--space-col-gap); align-items: flex-start; margin-bottom: 20px;
+  gap: var(--space-col-gap); align-items: flex-start; margin-bottom: 20px;
 }
 .hobby-section__name {
   font-size: var(--fs-h3);
