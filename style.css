@@ -494,7 +494,6 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 .two-col {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
   gap: var(--space-col-gap);
   width: 100%;
 }
