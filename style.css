@@ -511,8 +511,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 }
 .collab-section__inner {
   width: 100%; max-width: 1024px;
-  display: flex; flex-direction: row;
-  align-items: flex-start; gap: var(--space-col-gap);
+  gap: var(--space-col-gap);
 }
 .collab-section__copy { flex: 1 0 0; min-width: 0; }
 .collab-section__action { flex-shrink: 0; padding-top: 4px; }
