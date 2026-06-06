@@ -924,7 +924,12 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   display: flex; justify-content: center; overflow: hidden;
 }
 .case-section__inner {
-  width: 100%; max-width: 1024px;
+  width: 100%; 
+  max-width: 1024px;
+  flex-direction: column;   
+  gap: 0;                   
+  align-items: stretch;
+}
   
 }
 .case-section__label-col {
