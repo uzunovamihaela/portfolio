@@ -929,7 +929,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   height: 100%;
   max-width: 1024px;
   flex-direction: column;   
-  gap: 24px;                   
+  gap: 64px;                   
   align-items: stretch;
   justify-content: space-between;
 }
