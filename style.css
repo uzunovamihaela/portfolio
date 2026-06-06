@@ -314,11 +314,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   padding-right: var(--space-px);
   overflow: hidden;
 }
-.panel--round-bottom {
-  border-bottom-left-radius: var(--r-panel);
-  border-bottom-right-radius: var(--r-panel);
-}
-.panel--round-all { border-radius: var(--r-panel); }
+
 .panel__inner { width: 100%; max-width: 1024px; }
 
 /* ── 5. HERO SECTION ──────────────────────────────────────── */
