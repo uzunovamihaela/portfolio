@@ -524,8 +524,8 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 /* ── 8. SKILLS LIST & TAGS ───────────────────────────────── */
 .skills-list { display: flex; flex-direction: column; border-top: 1px solid var(--color-border); }
 .skills-list__item {
-  display: flex; align-items: center; gap: 12px;
-  padding: 13px 0;
+  display: flex; align-items: center; gap: 8px;
+  padding: 6px 0;
   border-bottom: 1px solid var(--color-border);
   font-size: var(--fs-body);
   color: var(--color-text-body);  /* contrast-safe */
