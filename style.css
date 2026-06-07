@@ -71,7 +71,7 @@
   --fs-h4:    clamp(20px, 2vw,    24px);   /* 20 → 24 */
   --fs-body:  clamp(16px, 1.2vw,  18px);   /* 16 → 18  ← minimum 16px */
   --fs-label: clamp(14px, 1.1vw,  16px);   /* 14 → 16 */
-  --fs-small: clamp(13px, 1vw,    14px);   /* 13 → 14 */
+  --fs-small: clamp(15px, 1vw,    17px);   /* 13 → 14 */
   --fs-nav:   16px;                        /* fixed, always readable */
 
   --lh-heading: 1.15;
