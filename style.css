@@ -503,7 +503,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   gap: var(--space-col-gap);
   width: 100%;
 }
-.two-col__sticky{
+.two-col__sticky {
   flex: 1 0 0; min-width: 0;
   position: sticky; top: 180px;
   display: flex; flex-direction: column; gap: 28px;
