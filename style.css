@@ -828,7 +828,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   gap: clamp(48px, 2vw, 28px);
   width: 100%;
 }
-.freelance-item { display: flex; flex-direction: column; gap: 12px; }
+.freelance-item { display: flex; flex-direction: column; gap: 8px; }
 .freelance-item__thumb {
   border-radius: 15px;        /* 15px per design rule */
   overflow: hidden;
