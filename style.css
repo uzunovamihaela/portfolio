@@ -81,7 +81,7 @@
   /* ─ Spacing ─────────────────────────────────────────────── */
   --space-px:        clamp(24px, 8vw, 120px); /* horizontal page padding */
   --space-hero-top:  180px;
-  --space-section-y: 180px;
+  --space-section-y: 80px;
   --space-card-pad:  48px;
   --space-col-gap:   80px;
   --space-mobile-px: 24px; /* hard rule: 24px on mobile sides */
@@ -825,7 +825,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 .freelance-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: clamp(16px, 2vw, 28px);
+  gap: clamp(48px, 2vw, 28px);
   width: 100%;
 }
 .freelance-item { display: flex; flex-direction: column; gap: 12px; }
