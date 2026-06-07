@@ -497,18 +497,18 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   padding-top: var(--space-section-y);
   padding-bottom: var(--space-section-y);
 }
-.two-col {
+.two-col, .three-col {
   display: flex;
   flex-direction: row;
   gap: var(--space-col-gap);
   width: 100%;
 }
-.two-col__sticky {
+.two-col__sticky, .three-col {
   flex: 1 0 0; min-width: 0;
   position: sticky; top: 180px;
   display: flex; flex-direction: column; gap: 28px;
 }
-.two-col__scroll { flex: 1 0 0; min-width: 0; display: flex; flex-direction: column; gap: 28px; }
+.two-col__scroll, .three-col { flex: 1 0 0; min-width: 0; display: flex; flex-direction: column; gap: 28px; }
 .collab-section {
   width: 100%;
   padding: 120px var(--space-px);
