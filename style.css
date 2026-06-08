@@ -861,10 +861,6 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
     0 1px 2px rgba(0,0,0,.04),
     0 4px 16px rgba(0,0,0,.06);
 }
-.h2-highlight {
-  color: #808080;
-  font-style: italic;
-}
 
 
 /* ── 9. BUTTONS ──────────────────────────────────────────── */
