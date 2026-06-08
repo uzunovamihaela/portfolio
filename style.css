@@ -631,6 +631,222 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   flex-direction: column;
   gap: 16px;                    /* gap between the two cards */
 }
+/* ── RESPONSIVE — TABLET ────────────────────────────────────── */
+@media (min-width: 810px) and (max-width: 1169px) {
+  .what-i-do__left {
+    flex: 0 0 260px;
+    max-width: 260px;
+  }
+}
+
+/* ── RESPONSIVE — MOBILE ────────────────────────────────────── */
+@media (max-width: 809px) {
+  .what-i-do {
+    padding: 80px var(--space-mobile-px);   /* 24px sides — hard rule */
+  }
+  .what-i-do__inner {
+    flex-direction: column;   /* stack left above cards */
+    gap: 40px;
+  }
+  .what-i-do__left {
+    position: static;         /* un-stick on mobile */
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+  }
+  .what-i-do__left-actions {
+    flex-direction: row;      /* buttons side-by-side on mobile */
+    flex-wrap: wrap;
+  }
+}
+
+/* ================================================================
+   WHAT I DO SECTION  —  section added to index.html
+   ================================================================
+   Layout: single dark-background section splits into two columns:
+   ┌─────────────────────────────┬──────────────────┐
+   │                             │  ┌─ About Me ──┐  │
+   │   (empty / black)           │  │ title       │  │
+   │                             │  │ ────────    │  │
+   │                             │  │ body text   │  │
+   │                             │  │ • skill tag │  │
+   │                             │  └─────────────┘  │
+   │                             │  ┌─ Methods ───┐  │
+   │  ‹ Services and Skills ›   │  │ title       │  │
+   │  Ready to collaborate?      │  │ ────────    │  │
+   │  Let's connect              │  │ body text   │  │
+   │  body text…                 │  │ • tool tag  │  │
+   └─────────────────────────────┴──────────────────┘
+
+   KEY TRICK:  align-items: end  on the grid —
+   both columns bottom-align. Cards are tall so they reach the top;
+   the short CTA text creates the natural "floats at bottom" look.
+================================================================ */
+
+/* ── Outer section ──────────────────────────────────────────── */
+.what-i-do {
+  width: 100%;
+  padding: clamp(80px, 12vw, 160px) var(--space-px);
+  display: flex;
+  justify-content: center;
+  /* No background needed — page body is already black */
+}
+
+/* ── Inner grid ─────────────────────────────────────────────── */
+.what-i-do__inner {
+  width: 100%;
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;   /* CTA | Cards */
+  gap: clamp(32px, 5vw, 64px);
+  align-items: end;   /* both columns anchor to the bottom edge —
+                         CTA sits flush; tall cards extend upward */
+}
+
+/* ── LEFT — CTA text on dark background ─────────────────────── */
+.what-i-do__cta {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-bottom: 4px;   /* fine-tune baseline alignment */
+}
+
+/* Small pill-shaped label  e.g. "‹ Services and Skills ›" */
+.what-i-do__cta-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--fs-small);      /* 13–14 px */
+  color: rgba(255,255,255,.45);
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: var(--r-pill);
+  padding: 5px 14px;
+  width: fit-content;
+  letter-spacing: .02em;
+}
+
+/* Large heading — H2 in white */
+.what-i-do__cta-heading {
+  font-size: var(--fs-h2);         /* 28–40 px fluid */
+  font-weight: 400;
+  letter-spacing: -.05em;
+  line-height: 1.2;
+  color: var(--color-dark-primary);     /* #ffffff — 21:1 contrast */
+}
+
+/* Body paragraph — muted white, WCAG AA */
+.what-i-do__cta-body {
+  font-size: var(--fs-body);       /* min 16 px */
+  color: var(--color-dark-muted);  /* rgba(255,255,255,.65) — 10.9:1 */
+  line-height: var(--lh-body);
+  max-width: 36ch;
+}
+
+/* ── RIGHT — stacked white cards ────────────────────────────── */
+.what-i-do__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Individual card: white, rounded, padded */
+.what-i-do__card {
+  background: var(--color-white);
+  border-radius: 16px;
+  padding: clamp(20px, 3vw, 28px);
+  display: flex;
+  flex-direction: column;
+  gap: 0;                 /* spacing handled by margin-bottom below */
+  box-shadow: 0 2px 8px rgba(0,0,0,.08), 0 8px 24px rgba(0,0,0,.04);
+}
+
+/* Card header: title + horizontal rule */
+.what-i-do__card-header {
+  margin-bottom: 16px;
+}
+
+/* H3 inside card — clear hierarchy */
+.what-i-do__card-title {
+  font-size: var(--fs-label);      /* 14–16 px */
+  font-weight: 600;
+  letter-spacing: -.02em;
+  line-height: 1.4;
+  color: var(--color-text-primary);
+  margin-bottom: 12px;
+}
+
+/* Full-bleed divider line between title and body */
+.what-i-do__card-divider {
+  border: none;
+  height: 1px;
+  background: rgba(0,0,0,.09);
+  margin: 0;               /* <hr> resets handled here */
+}
+
+/* Body paragraph inside card */
+.what-i-do__card-body {
+  font-size: var(--fs-small);      /* 13–14 px — slightly smaller inside cards */
+  color: var(--color-text-muted);  /* #6b6b6b — 5.74:1 on white */
+  line-height: 1.65;
+  margin-top: 14px;
+  margin-bottom: 20px;
+}
+
+/* Skill / tool tag group */
+.what-i-do__tag-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Tags with white bg + thin border — matches screenshot exactly */
+.what-i-do__tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--color-text-primary);
+  background: transparent;
+  border: 1px solid rgba(0,0,0,.16);
+  border-radius: var(--r-pill);
+  padding: 5px 12px;
+  white-space: nowrap;
+  transition: background var(--dur-fast) ease,
+              color var(--dur-fast) ease,
+              border-color var(--dur-fast) ease;
+  cursor: default;
+  line-height: 1;
+}
+.what-i-do__tag:hover {
+  background: var(--color-black);
+  color: var(--color-white);
+  border-color: transparent;
+}
+
+/* ── Responsive — Tablet ─────────────────────────────────────── */
+@media (min-width: 810px) and (max-width: 1169px) {
+  .what-i-do__inner {
+    gap: 32px;
+  }
+}
+
+/* ── Responsive — Mobile ─────────────────────────────────────── */
+@media (max-width: 809px) {
+  .what-i-do {
+    padding-left: var(--space-mobile-px);   /* 24px hard rule */
+    padding-right: var(--space-mobile-px);
+  }
+  .what-i-do__inner {
+    grid-template-columns: 1fr;   /* single column: CTA on top, cards below */
+    align-items: start;
+    gap: 40px;
+  }
+  /* On mobile CTA comes first in DOM but visually cards should
+     appear first. Use order to swap without changing HTML. */
+  .what-i-do__cards { order: -1; }
+  .what-i-do__cta   { order:  1; }
+  .what-i-do__cta-heading { font-size: clamp(24px, 7vw, 32px); }
+}
+
 
 /* ── WHITE SERVICE CARD ─────────────────────────────────────── */
 .services-card {
