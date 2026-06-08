@@ -699,7 +699,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   display: grid;
   grid-template-columns: 1fr 1fr;   /* CTA | Cards */
   gap: clamp(32px, 5vw, 64px);
-  align-items: end;   /* both columns anchor to the bottom edge —
+  align-items: start;   /* both columns anchor to the bottom edge —
                          CTA sits flush; tall cards extend upward */
 }
 
@@ -860,6 +860,10 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   box-shadow:
     0 1px 2px rgba(0,0,0,.04),
     0 4px 16px rgba(0,0,0,.06);
+}
+.h2-highlight {
+  color: #808080;
+  font-style: italic;
 }
 
 
