@@ -699,7 +699,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   display: grid;
   grid-template-columns: 1fr 1fr;   /* CTA | Cards */
   gap: clamp(32px, 5vw, 64px);
-  align-items: start;   /* both columns anchor to the bottom edge —
+  align-items: end;   /* both columns anchor to the bottom edge —
                          CTA sits flush; tall cards extend upward */
 }
 
@@ -846,6 +846,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   .what-i-do__cta   { order:  1; }
   .what-i-do__cta-heading { font-size: clamp(24px, 7vw, 32px); }
 }
+
 
 /* ── WHITE SERVICE CARD ─────────────────────────────────────── */
 .services-card {
