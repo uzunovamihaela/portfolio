@@ -521,29 +521,131 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 .collab-section__copy { flex: 1 0 0; min-width: 0; }
 .collab-section__action { flex-shrink: 0; padding-top: 4px; }
 
-/* ── 8. SKILLS LIST & TAGS ───────────────────────────────── */
-.skills-list { display: flex; flex-direction: column; border-top: 1px solid var(--color-border); }
-.skills-list__item {
-  display: flex; align-items: center; gap: 12px;
-  padding: 12px 0;
-  border-bottom: 1px solid var(--color-border);
-  font-size: var(--fs-body);
-  color: var(--color-text-body);  /* contrast-safe */
-  transition: color var(--dur-fast) ease, padding-left var(--dur-fast) ease;
+/* ================================================================
+   8. WHAT I DO SECTION
+   ================================================================
+   Layout: black background, two-column
+   ┌─────────────────────┬──────────────────────────────────────┐
+   │  LEFT (sticky)      │  RIGHT (two stacked white cards)    │
+   │                     │                                     │
+   │  eyebrow label      │  ┌──────────────────────────────┐   │
+   │                     │  │ services-card (About Me)     │   │
+   │  h2 heading         │  │  title ── divider ── text    │   │
+   │                     │  │  skill tags (bordered pills) │   │
+   │  body text          │  └──────────────────────────────┘   │
+   │                     │  ┌──────────────────────────────┐   │
+   │  action buttons     │  │ services-card (Methods)      │   │
+   │                     │  │  title ── divider ── text    │   │
+   │                     │  │  method/tool tags            │   │
+   │                     │  └──────────────────────────────┘   │
+   └─────────────────────┴──────────────────────────────────────┘
+
+   BEM class map:
+     .what-i-do                 outer section, full-width, black bg
+     .what-i-do__inner          max-width 1024px flex row wrapper
+     .what-i-do__left           left sticky column (collab content)
+     .what-i-do__left-eyebrow   small "← Services and Skills →" label
+     .what-i-do__left-title     h2 headline
+     .what-i-do__left-body      description paragraph
+     .what-i-do__left-actions   flex column of CTA buttons
+     .what-i-do__cards          right column, flex column of cards
+     .services-card             individual white rounded card
+     .services-card__title      card h3 heading
+     .services-card__divider    thin horizontal rule
+     .services-card__body       card description paragraph
+     .services-card__tags       flex-wrap tag cloud
+     .services-card__tag        single bordered pill tag
+================================================================ */
+
+/* ── Outer section ──────────────────────────────────────────── */
+.what-i-do {
+  width: 100%;
+  background: var(--color-black);
+  display: flex;
+  justify-content: center;
+  padding: 120px var(--space-px);
 }
-.skills-list__item::before { content: '—'; font-size: 10px; opacity: .35; flex-shrink: 0; }
-.skills-list__item:hover { color: var(--color-text-primary); padding-left: 4px; }
-.tag-group { display: flex; flex-wrap: wrap; gap: 10px; }
-.tag {
-  font-size: var(--fs-label);
-  color: var(--color-text-body);
-  background: var(--color-surface);
-  border-radius: var(--r-pill);
-  padding: 9px 18px;
-  transition: background var(--dur-fast) ease, color var(--dur-fast) ease;
-  cursor: default;
+
+/* ── Inner max-width row ─────────────────────────────────────── */
+.what-i-do__inner {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: row;
+  gap: clamp(40px, 6vw, 80px);
+  align-items: flex-start;
 }
-.tag:hover { background: var(--color-black); color: var(--color-white); }
+
+/* ── LEFT COLUMN — collab content, sticky ───────────────────── */
+.what-i-do__left {
+  flex: 0 0 340px;              /* fixed width; cards take remaining space */
+  max-width: 340px;
+  position: sticky;
+  top: 120px;                   /* stays visible while cards scroll past */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Small "← Services and Skills →" label above the heading */
+.what-i-do__left-eyebrow {
+  font-size: var(--fs-small);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--color-dark-muted);    /* rgba(255,255,255,.65) — contrast-safe */
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Main heading */
+.what-i-do__left-title {
+  font-size: var(--fs-h2);           /* clamp(28px → 40px) */
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  line-height: var(--lh-subhead);
+  color: var(--color-dark-primary);  /* #ffffff — 21:1 ratio */
+}
+
+/* Description text */
+.what-i-do__left-body {
+  font-size: var(--fs-body);         /* min 16px */
+  line-height: var(--lh-body);
+  color: var(--color-dark-body);     /* rgba(255,255,255,.88) */
+}
+
+/* CTA button group */
+.what-i-do__left-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  margin-top: 8px;
+}
+
+/* ── RIGHT COLUMN — two stacked white cards ─────────────────── */
+.what-i-do__cards {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;                    /* gap between the two cards */
+}
+
+/* ── WHITE SERVICE CARD ─────────────────────────────────────── */
+.services-card {
+  background: var(--color-white);
+  border-radius: 20px;
+  padding: clamp(24px, 3.5vw, 36px);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  /* Subtle inset shadow to lift card off black bg */
+  box-shadow:
+    0 1px 2px rgba(0,0,0,.04),
+    0 4px 16px rgba(0,0,0,.06);
+}
+
 
 /* ── 9. BUTTONS ──────────────────────────────────────────── */
 .btn {
