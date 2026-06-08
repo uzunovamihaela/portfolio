@@ -683,26 +683,6 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
    the short CTA text creates the natural "floats at bottom" look.
 ================================================================ */
 
-/* ── Outer section ──────────────────────────────────────────── */
-.what-i-do {
-  width: 100%;
-  padding: clamp(80px, 12vw, 160px) var(--space-px);
-  display: flex;
-  justify-content: center;
-  /* No background needed — page body is already black */
-}
-
-/* ── Inner grid ─────────────────────────────────────────────── */
-.what-i-do__inner {
-  width: 100%;
-  max-width: 1024px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;   /* CTA | Cards */
-  gap: clamp(32px, 5vw, 64px);
-  align-items: end;   /* both columns anchor to the bottom edge —
-                         CTA sits flush; tall cards extend upward */
-}
-
 /* ── LEFT — CTA text on dark background ─────────────────────── */
 .what-i-do__cta {
   display: flex;
