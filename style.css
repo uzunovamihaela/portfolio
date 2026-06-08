@@ -835,17 +835,6 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 .skills-list__item::before { content: '—'; font-size: 11px; opacity: .35; flex-shrink: 0; }
 .skills-list__item:hover { color: var(--color-text-primary); padding-left: 4px; }
 .tag-group { display: flex; flex-wrap: wrap; gap: 10px; }
-.tag {
-  font-size: var(--fs-label);
-  color: var(--color-text-body);
-  background: var(--color-surface);
-  border-radius: var(--r-pill);
-  padding: 9px 18px;
-  transition: background var(--dur-fast) ease, color var(--dur-fast) ease;
-  cursor: default;
-}
-.tag:hover { background: var(--color-black); color: var(--color-white); }
-
 
 /* ── Responsive — Tablet ─────────────────────────────────────── */
 @media (min-width: 810px) and (max-width: 1169px) {
