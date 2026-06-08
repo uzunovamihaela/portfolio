@@ -847,7 +847,6 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   .what-i-do__cta-heading { font-size: clamp(24px, 7vw, 32px); }
 }
 
-
 /* ── WHITE SERVICE CARD ─────────────────────────────────────── */
 .services-card {
   background: var(--color-white);
