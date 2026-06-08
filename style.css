@@ -799,6 +799,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   gap: 8px;
 }
 
+
 /* Tags with white bg + thin border — matches screenshot exactly */
 .what-i-do__tag {
   display: inline-block;
@@ -821,6 +822,30 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   color: var(--color-white);
   border-color: transparent;
 }
+
+.skills-list { display: flex; flex-direction: column; border-top: 1px solid var(--color-border); }
+.skills-list__item {
+  display: flex; align-items: center; gap: 12px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--fs-body);
+  color: var(--color-text-body);  /* contrast-safe */
+  transition: color var(--dur-fast) ease, padding-left var(--dur-fast) ease;
+}
+.skills-list__item::before { content: '—'; font-size: 11px; opacity: .35; flex-shrink: 0; }
+.skills-list__item:hover { color: var(--color-text-primary); padding-left: 4px; }
+.tag-group { display: flex; flex-wrap: wrap; gap: 10px; }
+.tag {
+  font-size: var(--fs-label);
+  color: var(--color-text-body);
+  background: var(--color-surface);
+  border-radius: var(--r-pill);
+  padding: 9px 18px;
+  transition: background var(--dur-fast) ease, color var(--dur-fast) ease;
+  cursor: default;
+}
+.tag:hover { background: var(--color-black); color: var(--color-white); }
+
 
 /* ── Responsive — Tablet ─────────────────────────────────────── */
 @media (min-width: 810px) and (max-width: 1169px) {
