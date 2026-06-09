@@ -564,7 +564,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   background: var(--color-black);
   display: flex;
   justify-content: center;
-  padding: 60px var(--space-px);
+  padding: 24px var(--space-px);
 }
 
 /* ── Inner max-width row ─────────────────────────────────────── */
@@ -575,6 +575,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   flex-direction: row;
   gap: clamp(40px, 6vw, 80px);
   align-items: flex-start;
+  justify-content: space-between;
 }
 
 /* ── LEFT COLUMN — collab content, sticky ───────────────────── */
