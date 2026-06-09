@@ -564,7 +564,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   background: var(--color-black);
   display: flex;
   justify-content: center;
-  padding: 120px var(--space-px);
+  padding: 60px var(--space-px);
 }
 
 /* ── Inner max-width row ─────────────────────────────────────── */
@@ -582,7 +582,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   flex: 0 0 340px;              /* fixed width; cards take remaining space */
   max-width: 340px;
   position: sticky;
-  top: 120px;                   /* stays visible while cards scroll past */
+  top: 60px;                   /* stays visible while cards scroll past */
   display: flex;
   flex-direction: column;
   gap: 20px;
