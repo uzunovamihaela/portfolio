@@ -565,7 +565,6 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   background: var(--color-black);
   display: flex;
   justify-content: center;
-  padding: 32px var(--space-px);
   display: flex;
   flex-direction: row;
   gap: var(--space-col-gap);
