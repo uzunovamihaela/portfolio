@@ -558,6 +558,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 ================================================================ */
 
 /* ── Outer section ──────────────────────────────────────────── */
+
 .what-i-do {
   width: 100%;
   max-width: 1024px;
@@ -565,6 +566,10 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   display: flex;
   justify-content: center;
   padding: 32px var(--space-px);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-col-gap);
+  width: 100%;
 }
 
 /* ── Inner max-width row ─────────────────────────────────────── */
