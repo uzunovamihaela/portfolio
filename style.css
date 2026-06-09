@@ -564,7 +564,8 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   background: var(--color-black);
   display: flex;
   justify-content: center;
-  padding: 24px var(--space-px);
+  padding: var(--space-px);
+  margin-top: 80px;
 }
 
 /* ── Inner max-width row ─────────────────────────────────────── */
@@ -573,7 +574,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   max-width: 1024px;
   display: flex;
   flex-direction: row;
-  gap: clamp(40px, 6vw, 80px);
+  gap: clamp(20px, 4vw, 40px);
   align-items: flex-start;
   justify-content: space-between;
 }
