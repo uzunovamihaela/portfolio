@@ -560,6 +560,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 /* ── Outer section ──────────────────────────────────────────── */
 .what-i-do {
   width: 100%;
+  max-width: 1024px;
   background: var(--color-black);
   display: flex;
   justify-content: center;
