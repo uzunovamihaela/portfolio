@@ -1109,7 +1109,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   align-items: flex-start; flex-wrap: wrap; gap: 8px;
   padding: 18px 0;
   border-bottom: 1px solid var(--color-border);
-  transition: padding-left var(--dur-fast) ease;
+  transition: var(--dur-fast) ease;
 }
 .experience-item:hover { padding-left: 4px; }
 .experience-item__role {
