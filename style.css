@@ -777,6 +777,8 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  margin-top: 24px;
+  padding-top: 24px;
 }
 
 
@@ -829,7 +831,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
     align-items: start;
     gap: 40px;
   }
-  
+
   /* On mobile CTA comes first in DOM but visually cards should
      appear first. Use order to swap without changing HTML. */
   .what-i-do__cards { order: -1; }
