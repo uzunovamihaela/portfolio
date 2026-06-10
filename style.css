@@ -778,7 +778,6 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   flex-wrap: wrap;
   gap: 8px;
   margin-top: 24px;
-  padding-top: 24px;
 }
 
 
@@ -802,12 +801,15 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 
 .skills-list { display: flex; flex-direction: column; border-top: 1px solid var(--color-border); }
 .skills-list__item {
-  display: flex; align-items: center; gap: 12px;
-  padding: 13px 0;
-  border-bottom: 1px solid var(--color-border);
-  font-size: var(--fs-body);
-  color: var(--color-text-body);  /* contrast-safe */
-  transition: color var(--dur-fast) ease, padding-left var(--dur-fast) ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--border-7);
+  font-size: clamp(14px, 1.5vw, 16px);
+  color: var(--text-60);
+  transition: color .2s, padding-left .2s;
+}
 }
 .skills-list__item::before { content: '—'; font-size: 13px; opacity: .35; flex-shrink: 0; }
 .skills-list__item:hover { color: var(--color-text-primary); padding-left: 4px; }
