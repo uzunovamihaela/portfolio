@@ -810,17 +810,34 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   color: var(--text-60);
   transition: color .2s, padding-left .2s;
 }
+
+/* ── SKILLS LIST ─────────────────────────────────────── */
 .skill-list {
   display: flex;
   flex-direction: column;
   min-width: 0;
   width: 100%;
-}ul, ol {
-  list-style: none;
 }
-.skills-list__item::before { content: '—'; font-size: 13px; opacity: .35; flex-shrink: 0; }
+.skill-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--border-7);
+  font-size: clamp(14px, 1.5vw, 16px);
+  color: var(--text-60);
+  transition: color .2s, padding-left .2s;
+}
+.skill-list li:first-child { border-top: 1px solid var(--border-7); }
+.skill-list li:hover { color: var(--black); padding-left: 4px; }
+.skill-list li::before { content: '—'; font-size: 11px; opacity: .3; flex-shrink: 0; }
+
+
+
+/* .skills-list__item::before { content: '—'; font-size: 13px; opacity: .35; flex-shrink: 0; }
 .skills-list__item:hover { color: var(--color-text-primary); padding-left: 4px; }
 .tag-group { display: flex; flex-wrap: wrap; gap: 10px; }
+*/
 
 /* ── Responsive — Tablet ─────────────────────────────────────── */
 @media (min-width: 810px) and (max-width: 1169px) {
