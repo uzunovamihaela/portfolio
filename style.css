@@ -823,12 +823,12 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   align-items: center;
   gap: 10px;
   padding: 11px 0;
-  border-bottom: 1px solid var(--border-7);
+  border-top: 1px solid rgba(0,0,0,.16); 
   font-size: clamp(14px, 1.5vw, 16px);
   color: var(--text-60);
   transition: color .2s, padding-left .2s;
 }
-.skill-list li:first-child { border-top: 1px solid var(--border-7); }
+.skill-list li:first-child { border-top: 1px solid rgba(0,0,0,.16); }
 .skill-list li:hover { color: var(--black); padding-left: 4px; }
 .skill-list li::before { content: '—'; font-size: 11px; opacity: .3; flex-shrink: 0; }
 
