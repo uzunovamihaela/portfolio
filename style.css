@@ -797,11 +797,6 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   cursor: default;
   line-height: 1;
 }
-.what-i-do__tag:hover {
-  background: var(--color-black);
-  color: var(--color-white);
-  border-color: transparent;
-}
 
 .skills-list { display: flex; flex-direction: column; border-top: 1px solid var(--color-border); }
 .skills-list__item {
@@ -834,6 +829,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
     align-items: start;
     gap: 40px;
   }
+  
   /* On mobile CTA comes first in DOM but visually cards should
      appear first. Use order to swap without changing HTML. */
   .what-i-do__cards { order: -1; }
