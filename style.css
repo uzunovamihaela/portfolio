@@ -810,7 +810,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   color: var(--text-60);
   transition: color .2s, padding-left .2s;
 }
-}
+
 .skills-list__item::before { content: '—'; font-size: 13px; opacity: .35; flex-shrink: 0; }
 .skills-list__item:hover { color: var(--color-text-primary); padding-left: 4px; }
 .tag-group { display: flex; flex-wrap: wrap; gap: 10px; }
