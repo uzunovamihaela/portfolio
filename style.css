@@ -980,7 +980,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   z-index: 2;
 }
 
-.footer-button-mail {
+.footer-button-mail:hover {
   background: var(--color-black);
   color: var(--color-white);
   transform: scale(1.03);
