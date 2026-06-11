@@ -983,7 +983,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 .footer-button-mail:hover {
   padding: 8px 16px;
   border-radius: var(--r-pill);
-  border: 1.5px solid rgba(0,0,0,.08);
+  border: 2px solid rgba(237, 237, 237, 0.08);
   background: var(--color-);
   color: var(--color-white);
   transform: scale(1.03);
