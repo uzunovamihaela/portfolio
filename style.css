@@ -936,7 +936,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 /* ── 11. FOOTER ──────────────────────────────────────────── */
 .footer {
   width: 100%;
-  padding: 120px var(--space-px) 40px;
+  padding: 120px var(--space-px) 80px;
   display: flex; flex-direction: column; align-items: center;
 }
 .footer__inner { width: 100%; max-width: 1024px; display: flex; flex-direction: column; gap: 32px; }
