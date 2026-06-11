@@ -569,7 +569,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   flex-direction: row;
   gap: var(--space-col-gap);
   width: 100%;
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
 /* ── Inner max-width row ─────────────────────────────────────── */
@@ -688,6 +688,9 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   flex-direction: column;
   gap: 18px;
   padding-bottom: 4px;   /* fine-tune baseline alignment */
+  height: fit-content;
+  position: sticky;
+  top: 0;
 }
 
 /* Small pill-shaped label  e.g. "‹ Services and Skills ›" */
