@@ -940,7 +940,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   display: flex; flex-direction: column; align-items: center;
 }
 .footer__inner { width: 100%; max-width: 1024px; display: flex; flex-direction: column; gap: 32px; }
-.footer__cta-label { font-size: var(--fs-h4); color: var(--color-dark-muted);}
+.footer__cta-label { font-size: var(--fs-h4); color: var(--color-dark-muted);padding-bottom: 16px;}
 .footer__email-link {
   font-size: clamp(28px, 4vw, 48px);
   font-weight: 400; letter-spacing: -.05em; line-height: 1.15;
@@ -990,10 +990,6 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   transform: scale(1.03);
 }
 
-.footer-mail{
-  display: flex;
-  justify-content: space-between;
-}
 
 
 /* ── 12. ABOUT — PASSION, TESTIMONIAL CAROUSEL, EXPERIENCE ── */
