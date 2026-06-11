@@ -969,6 +969,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 
 .footer-button-mail{
   padding: 8px 16px;
+  align-content: center;
   background: rgba(247,249,253,.92);
   backdrop-filter: blur(8px);
   color: var(--color-text-primary);
@@ -981,6 +982,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 
 .footer-button-mail:hover {
   padding: 8px 16px;
+  align-content: center;
   border-radius: var(--r-pill);
   border: 1.5px solid rgba(255, 255, 255, 0.08);
   background: var(--color-text-subtle);
