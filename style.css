@@ -692,7 +692,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   padding-bottom: 4px;   /* fine-tune baseline alignment */
   height: fit-content;
   position: sticky;
-  top: 0;
+  top: 80;
 }
 
 /* Small pill-shaped label  e.g. "‹ Services and Skills ›" */
