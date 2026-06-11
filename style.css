@@ -982,8 +982,8 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 .footer-button-mail:hover {
   padding: 8px 16px;
   border-radius: var(--r-pill);
-  border: 2.5px solid rgba(255, 255, 255, 0.08);
-  background: var(--color-text-muted);
+  border: 1.5px solid rgba(255, 255, 255, 0.08);
+  background: var(--color-text-subtle);
   color: var(--color-white);
   transform: scale(1.03);
 }
