@@ -221,7 +221,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   padding-bottom: 2px;
   text-decoration: none;
 }
-.nav__link:hover { color: var(--color-text-primary); text-decoration: underline;}
+.nav__link:hover { color: var(--color-text-primary); content: ''; position: absolute;  bottom: -2px; left: 0; right: 0; height: 1px; background: var(--color-text-primary); border-radius: 1px;}
 .nav__link--active { color: var(--color-text-primary); }
 .nav__link--active::after {
   content: '';
@@ -964,7 +964,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 }
 .footer__copyright { font-size: var(--fs-small); color: var(--color-dark-muted); }
 .footer__nav { display: flex; gap: 24px; }
-.footer__nav-link { font-size: var(--fs-small); color: var(--color-dark-muted); transition: color var(--dur-fast) ease; }
+.footer__nav-link { font-size: var(--fs-small); color: var(--color-dark-muted); transition: color var(--dur-fast) ease; text-decoration: underline; }
 .footer__nav-link:hover { color: var(--color-dark-primary); }
 
 .footer-button-mail{
