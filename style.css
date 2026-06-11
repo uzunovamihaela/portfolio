@@ -221,7 +221,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   padding-bottom: 2px;
   text-decoration: none;
 }
-.nav__link:hover { color: var(--color-text-primary); content: ''; position: absolute;  bottom: -2px; left: 0; right: 0; height: 1px; background: var(--color-text-primary); border-radius: 1px;}
+.nav__link:hover { color: var(--color-text-primary); }
 .nav__link--active { color: var(--color-text-primary); }
 .nav__link--active::after {
   content: '';
