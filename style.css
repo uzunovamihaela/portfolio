@@ -988,6 +988,11 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   transform: scale(1.03);
 }
 
+.footer-mail{
+  display: flex;
+  justify-content: space-between;
+}
+
 
 /* ── 12. ABOUT — PASSION, TESTIMONIAL CAROUSEL, EXPERIENCE ── */
 
