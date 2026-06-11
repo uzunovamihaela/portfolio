@@ -972,7 +972,6 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   background: rgba(247,249,253,.92);
   backdrop-filter: blur(8px);
   color: var(--color-text-primary);
-  font-size: var(--fs-small);
   border-radius: var(--r-pill);
   border: 1.5px solid rgba(0,0,0,.08);
   font-weight: 600;
@@ -984,7 +983,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   padding: 8px 16px;
   border-radius: var(--r-pill);
   border: 2.5px solid rgba(255, 255, 255, 0.08);
-  background: var(--color-);
+  background: var(--color-text-muted);
   color: var(--color-white);
   transform: scale(1.03);
 }
