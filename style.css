@@ -968,7 +968,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 .footer__nav-link:hover { color: var(--color-dark-primary); }
 
 .footer-button-mail{
-  padding: 8px 16px;
+  padding: 16px 8px;
   align-content: center;
   background: rgba(247,249,253,.92);
   backdrop-filter: blur(8px);
@@ -981,7 +981,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 }
 
 .footer-button-mail:hover {
-  padding: 8px 16px;
+  padding: 16px 8px;
   align-content: center;
   border-radius: var(--r-pill);
   border: 1.5px solid rgba(255, 255, 255, 0.08);
