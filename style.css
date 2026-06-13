@@ -365,6 +365,17 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 .hero__subheading.is-visible { opacity: 1; transform: translateY(0); }
 
 /* ── 6. PROJECT CARDS ─────────────────────────────────────── */
+.projects-title{
+ display: flex;
+  width: 100%; 
+  height: 100%;
+  max-width: 1024px;
+  flex-direction: column;   
+  gap: 64px;                   
+  align-items: stretch;
+  justify-content: space-between;
+}
+
 .projects-panel { padding-bottom: var(--space-section-y); }
 .projects-panel .panel__inner {
   display: flex;
@@ -380,7 +391,6 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   font-weight: 500;
   color: var(--color-text-muted);
   letter-spacing: .01em;
-  padding-bottom: 60px;
 }
 .project-card {
   background: var(--color-white);
