@@ -503,6 +503,19 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 .project-card__meta-row:hover .project-card__meta-label { color: var(--color-text-primary); }
 .project-card__meta-divider { height: 1px; background: var(--color-border); width: 100%; }
 
+/* Project description main page cards*/
+.info-card-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.info-tag {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .02em;
+  color: var(--text-50);
+  background: var(--gray-light);
+  border-radius: 244px;
+  padding: 4px 12px;
+  white-space: nowrap;
+}
+
 /* ── 7. WHITE PANELS & TWO-COLUMN ─────────────────────────── */
 .content-panel {
   padding-top: var(--space-section-y);
