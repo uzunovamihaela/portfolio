@@ -464,7 +464,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 }
 /* H2 inside card — clear hierarchy below H1 */
 .project-card__title {
-  font-size: var(--fs-h2);
+  font-size: var(--fs-h3);
   font-weight: 400;
   letter-spacing: -.05em;
   line-height: var(--lh-subhead);
