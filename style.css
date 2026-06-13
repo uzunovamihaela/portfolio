@@ -380,6 +380,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   font-weight: 500;
   color: var(--color-text-muted);
   letter-spacing: .01em;
+  padding-bottom: 60px;
 }
 .project-card {
   background: var(--color-white);
