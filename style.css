@@ -510,7 +510,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   font-weight: 500;
   letter-spacing: .02em;
   color: var(--color-text-muted);
-  background: var(--color-text-subtle);
+  background: var(--color-nav-pill);
   border-radius: 244px;
   padding: 4px 12px;
   white-space: nowrap;
