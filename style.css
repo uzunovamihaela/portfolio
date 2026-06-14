@@ -1504,6 +1504,9 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   /* Footer */
   .footer { padding-top: 80px; }
 }
+.about-h{
+  font-size: var(--fs-h2);
+}
 
 @media (max-width: 480px) {
   .freelance-grid { grid-template-columns: 1fr; }
