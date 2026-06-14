@@ -1268,7 +1268,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 }
 .freelance-item__desc {
   font-size: var(--fs-small);
-  color: var(--color-text-body);  /* readable contrast */
+  color: var(--color-nav-pill);  /* readable contrast */
   line-height: 1.65;
 }
 
