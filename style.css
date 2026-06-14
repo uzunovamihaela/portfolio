@@ -1129,7 +1129,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 }
 /* The quote — H3 size for hierarchy */
 .testimonial-slide__quote {
-  font-size: var(--fs-h3);
+  font-size: var(--fs-h4);
   font-weight: 400;
   letter-spacing: -.04em;
   line-height: 1.7;
