@@ -1225,7 +1225,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   font-weight: 400;
   letter-spacing: -.04em;
   line-height: var(--lh-subhead);
-  color: var(--color-text-primary);
+  color: var(--color-white);
   margin-bottom: clamp(24px, 4vw, 40px);
 }
 .freelance-grid {
