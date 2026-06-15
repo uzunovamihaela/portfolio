@@ -925,6 +925,9 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
     0 4px 16px rgba(0,0,0,.06);
 }
 
+.li {
+  list-style: disc;
+}
 
 /* ── 9. BUTTONS ──────────────────────────────────────────── */
 .btn {
