@@ -1402,8 +1402,9 @@ li {
 }
 .case-more__thumb img { width: 100%; height: 100%; object-fit: cover; }
 
-.energym_video {
-  max-width: min-content;
+.energym_solution {
+  width: 50%;
+  max-width: fit-content;
 }
 
 /* ── 16. LIGHTBOX ────────────────────────────────────────── */
