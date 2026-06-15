@@ -1354,7 +1354,7 @@ li {
 .case-section__label-col {
   flex: 1 0 0; min-width: 0;
   position: sticky; top: 80px;
-  display: flex; flex-direction: row; gap: 20px;
+  display: flex; flex-direction: column; gap: 20px;
 }
 .case-section__content-col {
   flex: 1 0 0; min-width: 0;
@@ -1409,6 +1409,7 @@ li {
 
 #energym_video{
   margin-top: -50px;
+  width: 50%;
 }
 
 /* ── 16. LIGHTBOX ────────────────────────────────────────── */
