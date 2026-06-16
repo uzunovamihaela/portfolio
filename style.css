@@ -322,7 +322,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   overflow: hidden;
 }
 
-.panel__inner { width: 100%; max-width: 1024px; }
+.panel__inner { width: 100%; max-width: 1024px; height: fit-content;}
 
 #panel-freelance {
   background: var(--color-black);
