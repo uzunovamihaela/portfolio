@@ -1404,7 +1404,6 @@ li {
 
 .energym_solution {
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 48px;
   flex-wrap: wrap;
