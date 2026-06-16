@@ -392,7 +392,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 .projects-panel .panel__inner {
   display: flex;
   flex-direction: column;
-  gap: var(--space-section-y);
+  gap: var(--space-section-gap);
   padding-top: 60px;
 }
 .project-entry { position: relative; }
