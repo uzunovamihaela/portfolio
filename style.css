@@ -1408,12 +1408,13 @@ li {
   gap: 48px;
   flex-wrap: wrap;
   justify-content: space-between;
+  text-justify: distribute;
+
 }
 
 #energym_video{
   margin-top: -50px;
   width: 50%;
-  text-justify: distribute;
 }
 
 /* ── 16. LIGHTBOX ────────────────────────────────────────── */
