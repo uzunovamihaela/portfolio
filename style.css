@@ -338,6 +338,20 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 
 #panel-freelance { width: 100%; max-width: 1024px; }
 
+.panel__uni { width: 100%; max-width: 1024px; height: fit-content;}
+
+.panel-uni {
+  background: var(--color-black);
+  width: 100%;
+  color: var(--color-text-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: var(--space-px);
+  padding-right: var(--space-px);
+  overflow: hidden;
+}
+
 /* ── 5. HERO SECTION ──────────────────────────────────────── */
 .hero {
   padding-top: var(--space-hero-top);
