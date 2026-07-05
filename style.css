@@ -1407,18 +1407,24 @@ li {
 }
 .case-more__thumb img { width: 100%; height: 100%; object-fit: cover; }
 
-#energym_solution {
-  width: 50%;
-  max-width: 1024px;
+.solution-split {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: var(--space-col-gap);
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+.solution-split__text,
+.solution-split__video {
+  min-width: 0;
+}
+.solution-split__video video {
+  width: 100%; display: block; border-radius: 15px;
 }
 
-#energym_video{
-  margin-top: -50px;
-  max-width: 30%;
+@media (min-width: 1170px) {
+  .solution-split { flex-direction: row; align-items: flex-start; gap: var(--space-col-gap); }
+  .solution-split__text,
+  .solution-split__video { flex: 1 1 0; }
 }
 
 /* ── 16. LIGHTBOX ────────────────────────────────────────── */
