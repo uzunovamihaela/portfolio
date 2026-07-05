@@ -1418,6 +1418,7 @@ li {
 
 #energym_video{
   margin-top: -50px;
+  max-width: fit-content;
 }
 
 /* ── 16. LIGHTBOX ────────────────────────────────────────── */
