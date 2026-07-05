@@ -1408,6 +1408,8 @@ li {
 .case-more__thumb img { width: 100%; height: 100%; object-fit: cover; }
 
 #energym_solution {
+  margin-top: var(--space-card-pad);
+  margin-bottom: var(--space-card-pad);
   width: 100%;
   max-width: 1024px;
   display: flex;
