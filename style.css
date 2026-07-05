@@ -1379,7 +1379,11 @@ li {
 }
 .case-section__image { border-radius: 15px; overflow: hidden; background: var(--color-surface); }
 .case-section__image img { width: 100%; display: block; }
-.case-section__image-row { display: flex; grid-template-columns: 1fr 1fr; gap: 12px; flex-wrap: wrap;}
+.case-section__image-row {display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 48px;
+  flex-wrap: wrap;} //*{ display: flex; grid-template-columns: 1fr 1fr; gap: 12px; flex-wrap: wrap;} *//
 .case-section__image-row img { width: 100%; border-radius: 15px; display: block; object-fit: cover; object-position: center; }
 .case-role-list { display: flex; flex-direction: column; gap: 16px; }
 .case-role-item {
