@@ -414,6 +414,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   transition: transform var(--dur-base) var(--ease-out),
               box-shadow var(--dur-base) var(--ease-out);
   overflow: visible;
+  margin-top: 32px;
 }
 .project-card__shadow {
   position: absolute;
