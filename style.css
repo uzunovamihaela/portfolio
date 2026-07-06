@@ -1573,6 +1573,7 @@ background: var(--color-surface);
 
 /*ADDITIONAL DEYAILS TRYOUT*/
 .project-card {
+  max-width: 1024px;
   background: var(--white);
   border-radius: 16px;
   border: 1px solid rgba(0,0,0,.05);
@@ -1616,7 +1617,7 @@ background: var(--color-surface);
   transition: background .2s, color .2s, transform .18s;
   white-space: nowrap;
 }
-.card-badge:hover { background: var(--black); color: var(--white); transform: scale(1.04); }
+.card-badge:hover { background: var(--color-text-body); color: var(--color-white); transform: scale(1.04); }
 /* Body side */
 .card-body {
   padding: clamp(24px, 4vw, 48px);
