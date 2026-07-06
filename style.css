@@ -1477,6 +1477,15 @@ li {
 .case-more__thumb {
   border-radius: 15px;
 }
+.case-more__thumb-energym {
+height: fit-content;
+flex: 0 1 260px; 
+min-width: 140px;
+border-radius: var(--r-thumb); 
+overflow: hidden; 
+background: var(--color-surface);
+
+}
 
 /* ── NAV SCROLL LINE — remove hardcoded pixel initial so JS controls it ── */
 /* ── 18. RESPONSIVE — TABLET (810–1169 px) ───────────────── */
