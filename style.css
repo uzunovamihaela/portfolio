@@ -1569,3 +1569,92 @@ background: var(--color-surface);
   .hero__subheading.is-visible,
   .testimonial-slide { opacity: 1; transform: none; }
 }
+
+
+/*ADDITIONAL DEYAILS TRYOUT*/
+.project-card {
+  background: var(--white);
+  border-radius: 16px;
+  border: 1px solid rgba(0,0,0,.05);
+  box-shadow:
+    0 1px 2px rgba(0,0,0,.04),
+    0 4px 12px rgba(0,0,0,.05),
+    0 12px 40px rgba(0,0,0,.04);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  transition: transform .35s var(--ease), box-shadow .35s var(--ease);
+}
+.card-media {
+  position: relative;
+  overflow: hidden;
+  /* aspect-ratio keeps height proportional instead of fixed min-height */
+  aspect-ratio: 4/3;
+  background: #1a1818;
+  min-height: 0;               /* prevent overflow */
+}
+.card-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform .6s var(--ease);
+}
+.project-card:hover .card-media img { transform: scale(1.04); }
+.card-badge {
+  position: absolute;
+  top: 14px; right: 14px;
+  background: rgba(247,249,253,.92);
+  backdrop-filter: blur(8px);
+  color: var(--black);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 13px;
+  border-radius: 244px;
+  border: 1px solid rgba(0,0,0,.06);
+  z-index: 2;
+  transition: background .2s, color .2s, transform .18s;
+  white-space: nowrap;
+}
+.card-badge:hover { background: var(--black); color: var(--white); transform: scale(1.04); }
+/* Body side */
+.card-body {
+  padding: clamp(24px, 4vw, 48px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  min-width: 0;                /* prevent flex overflow */
+}
+.card-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.tag {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .02em;
+  color: var(--text-50);
+  background: var(--gray-light);
+  border-radius: 244px;
+  padding: 4px 12px;
+  white-space: nowrap;
+}
+.card-title {
+  font-size: clamp(16px, 1.8vw, 20px);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 1.7em;
+  color: var(--black);
+}
+.card-title strong { font-weight: 600; }
+.card-meta { font-size: 13px; color: var(--text-40); }
+.card-cta {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--black);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  width: fit-content;
+  margin-top: 4px;
+  transition: gap .3s;
+}
+.card-cta:hover { gap: 10px; }
