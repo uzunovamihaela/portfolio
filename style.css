@@ -1658,3 +1658,10 @@ background: var(--color-surface);
   transition: gap .3s;
 }
 .card-cta:hover { gap: 10px; }
+.card-badge:hover { background: var(--black); color: var(--white); transform: scale(1.04); }
+@media (max-width: 809px) { /* PROJECT CARD — stack vertically */
+  .project-card { grid-template-columns: 1fr; }
+  .card-media {
+    aspect-ratio: 16/9;        /* landscape ratio when stacked */
+    min-height: unset;
+  }
