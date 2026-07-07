@@ -1602,7 +1602,7 @@ background: var(--color-surface);
   object-fit: cover;
   transition: transform .6s var(--ease);
 }
-.energym-more-media img {
+.energym-more-media {
   position: absolute;
   inset: 0;
   width: 100%;
