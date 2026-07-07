@@ -1602,6 +1602,16 @@ background: var(--color-surface);
   object-fit: cover;
   transition: transform .6s var(--ease);
 }
+.energym-more-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 16px;
+  transition: transform .6s var(--ease);
+}
+
 .project-card:hover .more-media img { transform: scale(1.04); }
 .more-badge {
   position: absolute;
