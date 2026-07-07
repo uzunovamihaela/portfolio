@@ -1575,6 +1575,7 @@ background: var(--color-surface);
 .more-card {
   max-width: 1024px;
   background: var(--white);
+  margin-bottom: 40px;
   border-radius: 16px;
   border: 1px solid rgba(0,0,0,.05);
   box-shadow:
