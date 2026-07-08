@@ -1347,9 +1347,10 @@ li {
   height: 100%;
   max-width: 1024px;
   flex-direction: column;   
-  gap: 64px;                   
+  gap: 32px;                   
   align-items: stretch;
   justify-content: space-between;
+  margin-top: var(--space-col-gap);
 }
   
 .case-section__label-col {
