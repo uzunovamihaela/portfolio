@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clic — Mihaela Uzunova</title>
+  <meta name="description" content="Clic — A 3D furniture configurator that guides customers through personalising hi-fi furniture.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ══ NAVIGATION ══════════════════════════════════════════════════
+     Structure: Logo | [Center: expanding scroll line] | Links
+     The .nav__scroll-line width is driven by scroll position in main.js.
+     Corner tabs (.nav__tab) replicate Framer's masked shadow shapes.
+ ══════════════════════════════════════════════════════════════ -->
+<div class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__pill">
+
+    <!-- Logo — black circle with MU mark -->
+    <a href="index.html" class="nav__logo" aria-label="Mihaela Uzunova — go to homepage">
+    <img src="icons/Logo-MU.svg" alt="Mihaela Uzunova" height="32" width="auto">    </a>
+
+    <!-- Centre — expanding scroll progress line -->
+    <div class="nav__center" aria-hidden="true">
+      <div class="nav__scroll-line"></div>
+    </div>
+
+    <!-- Desktop links -->
+    <nav class="nav__links" aria-label="Page links">
+      <a href="index.html" class="nav__link nav__link--active">Projects</a>
+      <a href="about.html" class="nav__link">About</a>
+      <a href="#footer" class="nav__link">Contact</a>
+
+    </nav>
+
+    <!-- Hamburger (mobile only) -->
+    <button class="nav__ham" id="navHam"
+            aria-label="Toggle navigation" aria-expanded="false" aria-controls="navDrawer">
+      <span class="nav__ham-line"></span>
+      <span class="nav__ham-line"></span>
+      <span class="nav__ham-line"></span>
+    </button>
+
+    <!-- Corner tab decorations (extend pill shadow outward) -->
+    <div class="nav__tab nav__tab--left"  aria-hidden="true"></div>
+    <div class="nav__tab nav__tab--right" aria-hidden="true"></div>
+
+  </div>
+</div>
+
+<!-- Mobile navigation drawer -->
+<div class="nav__drawer" id="navDrawer" role="menu" aria-label="Mobile navigation">
+  <a href="index.html" class="nav__drawer-link nav__drawer-link--active" role="menuitem">Projects</a>
+  <a href="about.html" class="nav__drawer-link" role="menuitem">About</a>
+  <a href="#footer" class="nav__drawer-link" role="menuitem">Contact</a>
+
+</div>
+
+<!-- ══ PAGE ════════════════════════════════════════════════ -->
+<main class="page">
+
+  <!-- ── CASE HERO ────────────────────────────────────────── -->
+  <section class="panel panel--round-bottom" aria-label="Project introduction" style="padding-top: var(--space-hero-top); padding-bottom: 80px;">
+    <div class="panel__inner case-hero reveal">
+
+      <h1 class="case-hero__title">Clic</h1>
+
+      <p class="case-hero__subtitle">
+        Create a better, innovative and easier shopping experience 
+        by building a loyal and trustworthy relationship with the consumers. 
+        Føtexa is a shopping cart which revolutionises the way people do grocery 
+        shopping - with smart check out features Føtexa builds loyal and 
+        trustworthy relationship with the customers
+      </p>
+
+
+      <div class="case-hero__image">
+        <img src="photos/AUX start screen.png"
+             data-fallback="https://framerusercontent.com/images/dTWqrLY4Br1bdxAOUjs8K1aw.png"
+             alt="Advanced UX product displayed" loading="lazy">
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ── ROLE & RESPONSIBILITIES ──────────────────────────── -->
+  <section class="case-section reveal" aria-label="Role and responsibilities">
+    <div class="case-section__inner">
+    <h2 class="case-section__heading">Role & responsibilities</h2>
+
+      <div class="case-section__content-col">
+        <ul class="case-role-list" aria-label="Responsibilities">
+          <li class="case-role-item">
+            <div class="case-role-item__icon">
+              <img src="assets/images/clic-role-icon-1.svg"
+                   data-fallback="https://framerusercontent.com/images/jRqWgHIZMiWrxqKvzDiTtJECz8.png"
+                   alt="" aria-hidden="true" loading="lazy">
+            </div>
+            <p class="case-role-item__text">Synthesized findings into visual canvases to guide design decisions and developed user flows</p>
+          </li>
+          <li class="case-role-item">
+            <div class="case-role-item__icon">
+              <img src="assets/images/clic-role-icon-2.svg"
+                   data-fallback="https://framerusercontent.com/images/fIVNW1kHGNiQJj2zXW4owYQDc8.png"
+                   alt="" aria-hidden="true" loading="lazy">
+            </div>
+            <p class="case-role-item__text">Designed key interface screens, focusing on accessibility and ease of use and conducted usability testing</p>
+          </li>
+          <li class="case-role-item">
+            <div class="case-role-item__icon">
+              <img src="assets/images/clic-role-icon-3.svg"
+                   data-fallback="https://framerusercontent.com/images/VnwGY9hibziaSWbFkC8X9uz0q2s.png"
+                   alt="" aria-hidden="true" loading="lazy">
+            </div>
+            <p class="case-role-item__text">Created onboarding and visualisation models to match interactive features</p>
+          </li>
+          <li class="case-role-item">
+            <div class="case-role-item__icon">
+              <img src="assets/images/clic-role-icon-4.svg"
+                   data-fallback="https://framerusercontent.com/images/IWECTOm2qExU5VpOpJzEhXlrvKM.png"
+                   alt="" aria-hidden="true" loading="lazy">
+            </div>
+            <p class="case-role-item__text">Analysed feedback and implemented iterative improvements</p>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ── THE CHALLENGE ────────────────────────────────────── -->
+  <section class="case-section reveal" style="--reveal-delay: 60ms" aria-label="The challenge">
+    <div class="case-section__inner">
+
+      <div class="case-section__label-col">
+        <h2 class="case-section__heading">The challenge</h2>
+      </div><br>
+
+      <div class="case-section__content-col">
+        <p class="case-section__body"> 
+          Customers often struggle to visualise how furniture will look in their homes, leading to
+          uncertainty in the buying process. Additionally, dealers face difficulties in effectively
+          communicating the wide range of customisation options available, resulting in long
+          decision-making times and potential dissatisfaction. The challenge is to create a more
+          comfortable decision making and buying process for clients, while also supporting the
+          salespersons who meets them in-store.
+        </p><br>
+
+        <div class="case-section__image">
+          <img src="assets/images/clic-process-diagram.svg"
+               data-fallback="https://framerusercontent.com/images/yae4MFhzGGLmxQ6kJMKPK57f00.png"
+               alt="Design process diagram" loading="lazy">
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <br>
+
+  <!-- ── THE PROBLEM ──────────────────────────────────────── -->
+  <section class="case-section reveal" style="--reveal-delay: 60ms" aria-label="The problem">
+    <div class="case-section__inner">
+
+      <div class="case-section__label-col">
+        <h2 class="case-section__heading">The problem</h2>
+      </div><br>
+       <p class="case-section__callout">
+          How can Clic offer the customer a way to experience their products and tailor individual solutions?
+        </p>
+      <div class="case-section__content-col">
+        <div class="case-section__image">
+          <img src="assets/images/clic-problem-diagram.svg"
+               data-fallback="https://framerusercontent.com/images/WeKlBRcOQDTcaSQ0DZbd5GpvW4.png"
+               alt="Problem space diagram" loading="lazy">
+        </div>
+      </div>
+      <p>Our solutions transforms a complex purchasing journey into an intuitive experience, enabling 
+        customers to explore personalised solutions while providing dealers with clearer communication 
+        and a more efficient sales process.</p>
+    </div>
+  </section>
+
+
+
+  <!-- ── THE SOLUTION ─────────────────────────────────────── -->
+<section class="panel panel--round-all content-panel reveal" aria-label="Energym solution">
+    <div class="panel__inner">
+      <div class="case-more">
+        <div class="case-more__copy">
+        <h2 class="h2" style="margin-bottom:16px;">The solution</h2>
+        <p class="text-body" style="margin-bottom:28px;">
+          The Clic 3D Modeling Platform is an interactive digital tool designed to 
+          revolutionise the way customers explore, personalise, and order high-end 
+          hi-fi furniture. The web-based 3D configurator enables users to try every 
+          customisation option, preview furniture in their home context, and seamlessly 
+          connect with dealers to finalise their orders.
+          <br>
+          Through iterative prototyping, usability testing, and agile project management, 
+          the team delivered a tool that bridges the gap between digital inspiration 
+          and in-store experience, ultimately increasing customer satisfaction and 
+          supporting Clic's business goals.
+        </p>
+        </div>
+        
+        <div class="more-body">
+          <!-- Prototype video -->
+        <div class="case-video-wrap">
+          <video controls preload="none" autoplay controls muted aria-label="Clic prototype video showcase" id="energym_video"
+                 poster="assets/images/clic-hero.svg"
+                 aria-label="Clic prototype video showcase">
+            <source src="photos/CLIC Mock up Video compressed 2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── USABILITY TESTING ─────────────────────────────────── -->
+  <section class="case-section reveal" aria-label="Usability testing">
+    <div class="case-section__inner">
+    <h2 class="case-section__heading">Usability testing</h2>
+
+      <div class="case-section__content-col">
+        <p class="case-section__body"> 
+          The performed testings were ‘think-out-loud’ sessions. We had a 
+          scenario and questions for the users, however, we also let them 
+          explore and say what they assumed the product and its features 
+          are about. As of doubts regarding the functions, we have decided 
+          to add onboarding screens, which will give additional information 
+          to visitors on how they can use the solution.<br>
+          Users suggested having elements to the view window, which help 
+          them get a more realistic look of the furniture. Others mentioned 
+          that contacting the dealer after building would be a primary action 
+          for them. This is why we added the ‘Contact your dealer’ button as 
+          the next step once the design is finished.
+
+        </p><br>
+        <div class="more-body">
+          <img src="assets/images/clic-usability-1.svg"
+               data-fallback="https://framerusercontent.com/images/l8XxgUoziqIaMZmntR6L9KMa7no.png"
+               alt="Usability test session 1" loading="lazy">
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+ <!-- ── MORE THINGS TO SEE ───────────────────────────────── -->
+  <section class="panel panel--round-all content-panel reveal" aria-label="More projects">
+    <div class="panel__inner">
+      <div class="case-more">
+        <div class="case-more__copy">
+          <p style="font-size:12px; color:var(--color-text-25); margin-bottom:12px;">← see also →</p>
+          <h2 class="text-h2" style="margin-bottom:16px;">More things to see</h2>
+          <p class="text-body" style="margin-bottom:28px;">
+            Do you want to discuss the design process?<br>
+            Get in touch to see more of my work and current projects!
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+  <article class="more-card" role="link" aria-label="View Energym case study">
+          <div class="more-media">
+            <img src="photos/energym-project-hero.png" alt="Energym landing page screenshot" loading="lazy" border-radius="12px"/>
+          </div>
+          <div class="more-body">
+            <div class="more-tags">
+              <span class="info-tag">Vibe coding</span>
+              <span class="info-tag">Digital design</span>
+              <span class="info-tag">Brand identity</span>
+              <span class="info-tag">Website development</span>
+              <span class="info-tag">Client work</span>
+            </div>
+            <h2 class="more-title"><strong>Energym</strong> — A website representing the business and helping users download the app.</h2>
+            <a class="btn btn--outline-dark" href="project-energym.html" onclick="event.stopPropagation()">View Case Study →</a>
+          </div>
+  </article>
+
+   <article class="more-card" role="link" aria-label="View Clic case study">
+          <div class="more-media">
+            <img src="photos/clic onboarding mock up screen.png" alt="Clic 3D furniture configurator prototype on screen" loading="lazy" border-radius="12px"/>
+          </div>
+          <div class="more-body">
+            <div class="more-tags">
+              <span class="info-tag">UX Design</span>
+              <span class="info-tag">Prototype</span>
+              <span class="info-tag">Mystery shopping</span>
+              <span class="info-tag">Usability testing</span>
+              <span class="info-tag">Data analysis</span>
+            </div>
+            <h2 class="more-title"><strong>Clic</strong> — A video showcasing the prototype and its interactive features.</h2>
+            <a class="btn btn--outline-dark" href="project-clic.html" onclick="event.stopPropagation()">View Case Study →</a>
+          </div>
+  </article>
+</section>
+
+  <div class="panel-gap" aria-hidden="true"></div>
+
+<!-- ── FOOTER ──────────────────────────────────────── -->
+  <footer class="footer" aria-label="Footer" id="footer">
+    <div class="footer__inner reveal">
+      <div class="footer-mail">
+        <p class="footer__cta-label">Let it happen</p>
+      </div>
+      <div class="footer__secondary-links">
+        <a href="mailto:muzunova2000@gmail.com" class="btn btn--outline-dark">muzunova2000@gmail.com</a>
+        <a href="https://www.linkedin.com/in/mihaela-uzunova" target="_blank" rel="noopener noreferrer" class="btn btn--outline-dark">LinkedIn ↗</a>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copyright">Mihaela Uzunova, 2026</span>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="index.html" class="footer__nav-link">Projects</a>
+          <a href="about.html" class="footer__nav-link">About</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>
