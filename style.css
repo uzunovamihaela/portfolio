@@ -1486,6 +1486,7 @@ li {
 height: fit-content;
 flex: 0 1 260px; 
 min-width: 140px;
+min-height: 300px;
 border-radius: var(--r-thumb); 
 overflow: hidden; 
 background: var(--color-surface);
