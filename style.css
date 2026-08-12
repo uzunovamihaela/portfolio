@@ -1417,6 +1417,7 @@ li {
   margin-top: var(--space-card-pad);
   margin-bottom: var(--space-card-pad);
   width: 100%;
+  height: 100%;
   max-width: 1024px;
   display: flex;
   flex-direction: row;
@@ -1426,6 +1427,7 @@ li {
 
 #energym_video{
   max-width:100%;
+  height: 100%;
 }
 
 /* ── 16. LIGHTBOX ────────────────────────────────────────── */
