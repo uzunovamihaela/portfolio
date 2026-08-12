@@ -1352,6 +1352,11 @@ li {
   justify-content: space-between;
   margin-top: var(--space-col-gap);
 }
+.case-hero__image_aux {
+  width: 100%; border-radius: 15px;
+  overflow: hidden; background: none; aspect-ratio: 16/9; margin-top: 12px;
+}
+.case-hero__image_aux img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; border-radius: 0; }
   
 .case-section__label-col {
   flex: 1 0 0; min-width: 0;
