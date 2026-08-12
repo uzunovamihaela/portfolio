@@ -1354,7 +1354,7 @@ li {
 }
 .case-hero__image_aux {
   width: 100%; border-radius: 15px;
-  overflow: hidden; background: none; aspect-ratio: 16/9; margin-top: 12px;
+  overflow: hidden; background: #F7F7F7; aspect-ratio: 16/9; margin-top: 12px;
 }
 .case-hero__image_aux img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; border-radius: 0; }
   
