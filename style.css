@@ -1319,7 +1319,7 @@ li {
 .project-img {
   border-radius: 15px;        /* 15px per design rule */
   width: 100%; aspect-ratio: 1;
-  object-fit: contain;
+  object-fit: fill;
   object-position: center;
   display: block;
   cursor: zoom-in;
