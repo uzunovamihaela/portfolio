@@ -1315,6 +1315,19 @@ li {
 }
 .hobby-gallery__img:hover { transform: scale(1.04); }
 
+.project-gallery { display: grid; grid-template-columns: repeat(2,1fr); gap: 8px; }
+.project-img {
+  border-radius: 15px;        /* 15px per design rule */
+  width: 100%; aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  cursor: zoom-in;
+  transition: transform var(--dur-base) var(--ease-out);
+}
+.project-img:hover { transform: scale(1.04); }
+
+
 /* ── 15. CASE STUDY PAGE ─────────────────────────────────── */
 .case-hero {
   text-align: center; display: flex; flex-direction: column;
