@@ -244,7 +244,32 @@
       if (e.key === 'ArrowRight') lbGo(1);
     });
   }
-/*Gallery of the projects with zoom effect */
+
+  /*--------------------
+  Gallery of the projects with zoom effect 
+  -----------------------*/
+
+  
+if (lb) {
+    document.querySelectorAll('.hobby-gallery__img').forEach(function (img) {
+      img.addEventListener('click', function () {
+        var all = Array.from(img.closest('.hobby-gallery').querySelectorAll('.hobby-gallery__img'));
+        lbOpen(all, all.indexOf(img));
+      });
+    });
+    if (lbClose) lbClose.addEventListener('click', lbClose_);
+    if (lbPrev)  lbPrev.addEventListener('click',  function (e) { e.stopPropagation(); lbGo(-1); });
+    if (lbNext)  lbNext.addEventListener('click',  function (e) { e.stopPropagation(); lbGo(1); });
+    lb.addEventListener('click', function (e) { if (e.target === lb) lbClose_(); });
+    document.addEventListener('keydown', function (e) {
+      if (!lb.classList.contains('lightbox--open')) return;
+      if (e.key === 'Escape')     lbClose_();
+      if (e.key === 'ArrowLeft')  lbGo(-1);
+      if (e.key === 'ArrowRight') lbGo(1);
+    });
+  }
+
+
   /* ─────────────────────────────────────────────────────
      8. SMOOTH PAGE TRANSITIONS
   ───────────────────────────────────────────────────── */
