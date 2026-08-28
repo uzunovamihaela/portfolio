@@ -249,11 +249,11 @@
   Gallery of the projects with zoom effect 
   -----------------------*/
 
-  
+
 if (lb) {
-    document.querySelectorAll('.hobby-gallery__img').forEach(function (img) {
+    document.querySelectorAll('.project-img').forEach(function (img) {
       img.addEventListener('click', function () {
-        var all = Array.from(img.closest('.hobby-gallery').querySelectorAll('.hobby-gallery__img'));
+        var all = Array.from(img.closest('.hobby-gallery').querySelectorAll('.project-img'));
         lbOpen(all, all.indexOf(img));
       });
     });
