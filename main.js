@@ -244,7 +244,7 @@
       if (e.key === 'ArrowRight') lbGo(1);
     });
   }
-
+/*Gallery of the projects with zoom effect */
   /* ─────────────────────────────────────────────────────
      8. SMOOTH PAGE TRANSITIONS
   ───────────────────────────────────────────────────── */
