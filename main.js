@@ -253,7 +253,7 @@
 if (lb) {
     document.querySelectorAll('.project-img').forEach(function (img) {
       img.addEventListener('click', function () {
-        var all = Array.from(img.closest('.hobby-gallery').querySelectorAll('.project-img'));
+        var all = Array.from(img.closest('.project-gallery').querySelectorAll('.project-img'));
         lbOpen(all, all.indexOf(img));
       });
     });
